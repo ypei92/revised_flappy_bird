@@ -1,0 +1,114 @@
+Release 8.2i ngdbuild I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\8.2i\bin\nt\ngdbuild.exe -ise
+C:/Xilinx/8.2i/project/flappy_bird/flappy_bird.ise -intstyle ise -dd _ngo -nt
+timestamp -uc top.ucf -p xc2vp30-ff896-6 top.ngc top.ngd
+
+Reading NGO file 'C:/Xilinx/8.2i/project/flappy_bird/top.ngc' ...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/brick_rom.ngc"...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/intro_rom.ngc"...
+Loading design module
+"C:\Xilinx\8.2i\project\flappy_bird/score_intro_rom.ngc"...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/life_rom.ngc"...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/bgd.ngc"...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/peas_rom.ngc"...
+Loading design module
+"C:\Xilinx\8.2i\project\flappy_bird/peashooter_rom_0.ngc"...
+Loading design module
+"C:\Xilinx\8.2i\project\flappy_bird/peashooter_rom_1.ngc"...
+Loading design module
+"C:\Xilinx\8.2i\project\flappy_bird/peashooter_rom_2.ngc"...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/cloud_rom.ngc"...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/wing_rom.ngc"...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/bird_rom.ngc"...
+Loading design module "C:\Xilinx\8.2i\project\flappy_bird/num_rom.ngc"...
+
+Applying constraints in "top.ucf" to the design...
+
+Checking timing specifications ...
+Checking Partitions ...
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'vga_show1/Life_show/rom_life_0/wea<0>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'vga_show1/Life_show/rom_life_0/dina<6>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'vga_show1/Life_show/rom_life_0/dina<5>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'vga_show1/Life_show/rom_life_0/dina<4>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'vga_show1/Life_show/rom_life_0/dina<3>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'vga_show1/Life_show/rom_life_0/dina<2>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'vga_show1/Life_show/rom_life_0/dina<1>' has
+   no driver
+WARNING:NgdBuild:452 - logical net 'vga_show1/Life_show/rom_life_0/dina<0>' has
+   no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<23>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<22>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<21>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<20>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<19>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<18>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<17>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<16>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<15>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<14>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<13>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<12>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'vga_show1/Peashooter_show/rom_peashooter_0/dina<0>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  33
+
+Total memory usage is 83748 kilobytes
+
+Writing NGD file "top.ngd" ...
+
+Writing NGDBUILD log file "top.bld"...

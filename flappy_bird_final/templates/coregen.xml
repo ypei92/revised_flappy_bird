@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="backgd" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+backgd YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="bird_0" treetype="template">
+		</Template>
+		<Template label="bgd" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+bgd YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="bird_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+bird_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="wing_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+wing_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="num_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+num_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="peashooter_rom_0" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+peashooter_rom_0 YourInstanceName (
+    .clka(clka),
+    .dina(dina),
+    .addra(addra),
+    .wea(wea),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="peashooter_rom_1" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+peashooter_rom_1 YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="peashooter_rom_2" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+peashooter_rom_2 YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="peas_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+peas_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="cloud_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+cloud_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="brick_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+brick_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="life_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+life_rom YourInstanceName (
+    .clka(clka),
+    .dina(dina),
+    .addra(addra),
+    .wea(wea),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="intro_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+intro_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+		<Template label="score_intro_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+score_intro_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra),
+    .douta(douta));
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="backgd" treetype="template">
+		</Template>
+		<Template label="bird_0" treetype="template">
+		</Template>
+		<Template label="bgd" treetype="template">
+		</Template>
+		<Template label="bird_rom" treetype="template">
+		</Template>
+		<Template label="wing_rom" treetype="template">
+		</Template>
+		<Template label="num_rom" treetype="template">
+		</Template>
+		<Template label="peashooter_rom_0" treetype="template">
+		</Template>
+		<Template label="peashooter_rom_1" treetype="template">
+		</Template>
+		<Template label="peashooter_rom_2" treetype="template">
+		</Template>
+		<Template label="peas_rom" treetype="template">
+		</Template>
+		<Template label="cloud_rom" treetype="template">
+		</Template>
+		<Template label="brick_rom" treetype="template">
+		</Template>
+		<Template label="life_rom" treetype="template">
+		</Template>
+		<Template label="intro_rom" treetype="template">
+		</Template>
+		<Template label="score_intro_rom" treetype="template">
+		</Template>
+	</Folder>
+</RootFolder>

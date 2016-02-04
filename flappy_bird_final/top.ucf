@@ -1,0 +1,42 @@
+#I/O Pin Assignments
+
+NET "clk_ps2"  LOC = "AG2"  ;
+NET "data_ps2"  LOC = "AG1"  ;
+
+NET "rst_n"  LOC = "AG5"  ;
+NET "clk"  LOC = "AJ15"  ; #100M
+
+NET "v_sysc"  LOC = "D11"  ;
+NET "h_sysc"  LOC = "B8"  ;
+
+NET "vga_out_blank"  LOC = "A8"  ;
+NET "vga_comp_synch"  LOC = "G12"  ;
+
+NET "vga_clk"  LOC = "H12"  ;
+
+NET "vga_red[7]"  LOC = "H10" ;
+NET "vga_red[6]"  LOC = "C7" ;
+NET "vga_red[5]"  LOC = "D7" ;
+NET "vga_red[4]"  LOC = "F10" ;
+NET "vga_red[3]"  LOC = "F9" ;
+NET "vga_red[2]"  LOC = "G9" ;
+NET "vga_red[1]"  LOC = "H9" ;
+NET "vga_red[0]"  LOC = "G8" ;
+ 
+NET "vga_blue[7]"  LOC = "E14" ;
+NET "vga_blue[6]"  LOC = "D14"  ;
+NET "vga_blue[5]"  LOC = "D13"  ;
+NET "vga_blue[4]"  LOC = "C13"  ;
+NET "vga_blue[3]"  LOC = "J15"  ;
+NET "vga_blue[2]"  LOC = "H15"  ;
+NET "vga_blue[1]"  LOC = "E15"  ;
+NET "vga_blue[0]"  LOC = "D15"  ;
+
+NET "vga_green[7]"  LOC = "E11"  ;
+NET "vga_green[6]"  LOC = "G11"  ;
+NET "vga_green[5]"  LOC = "H11"  ;
+NET "vga_green[4]"  LOC = "C8"  ;
+NET "vga_green[3]"  LOC = "D8"  ;
+NET "vga_green[2]"  LOC = "D10"  ;
+NET "vga_green[1]"  LOC = "E10"  ;
+NET "vga_green[0]"  LOC = "G10"  ;

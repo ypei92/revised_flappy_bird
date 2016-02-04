@@ -1,0 +1,532 @@
+WARNING:PhysDesignRules:372 - Gated clock. Clock net vga_show1/pipe/stripe_valid
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vga_show1/Peashooter_show/_not0003 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vga_show1/Intro_show/_or0000 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vga_show1/Life_show/_not0004 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net vga_show1/Bird_show/_or0000
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net vga_show1/number/_not0003
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[0].ram.r/v2.ram/dp2x2.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp2x2.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[0].ram.r/v2.ram/dp2x2.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp2x2.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA8> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA9> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA10> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA11> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA16> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA17> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA18> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ram
+   loop[0].ram.r/v2.ram/dp36x36.ram/vga_show1/Life_show/rom_life_0/BU2/U0/blk_me
+   m_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A
+   >.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[2].ram.r/v2.ram/dp2x2.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v2.ram/dp2x2.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[2].ram.r/v2.ram/dp2x2.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v2.ram/dp2x2.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[4].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[8].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[1].ram.r/v2.ram/dp2x2.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v2.ram/dp2x2.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[1].ram.r/v2.ram/dp2x2.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v2.ram/dp2x2.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[5].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_peas
+   hooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp9x9.ra
+   m.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA0> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_pea
+   shooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.
+   ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA1> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_pea
+   shooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.
+   ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA2> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_pea
+   shooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.
+   ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA3> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_pea
+   shooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.
+   ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA4> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_pea
+   shooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.
+   ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA5> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_pea
+   shooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.
+   ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA6> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_pea
+   shooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.
+   ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DIA7> on
+   block:<vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/va
+   lid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.ram/vga_show1/Peashooter_show/rom_pea
+   shooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[10].ram.r/v2.ram/dp9x9.
+   ram.A>:<RAMB16_RAMB16A>.
+DRC detected 0 errors and 108 warnings.

@@ -1,0 +1,49 @@
+ command line:
+   ./testbench_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  3567
+
+Wed Jul 02 11:04:45 2014
+
+WARNING:Simulator:434 - Module top does not have a `timescale directive but
+   previous modules do.
+WARNING:Simulator:13 - For instance /testbench/top/, width 8 of formal port
+   vga_red is not equal to width 1 of actual signal vga_red.
+WARNING:Simulator:13 - For instance /testbench/top/, width 8 of formal port
+   vga_green is not equal to width 1 of actual signal vga_green.
+WARNING:Simulator:13 - For instance /testbench/top/, width 8 of formal port
+   vga_blue is not equal to width 1 of actual signal vga_blue.
+WARNING:Simulator:13 - For instance /testbench/top/vga_show1/pipe/, width 9 of
+   formal port h_line is not equal to width 10 of actual signal x.
+WARNING:Simulator:13 - For instance /testbench/top/vga_show1/pipe/, width 9 of
+   formal port v_line is not equal to width 10 of actual signal y.
+WARNING:Simulator:13 - For instance /testbench/top/vga_show1/pipe/, width 1 of
+   formal port position_1_v is not equal to width 9 of actual signal
+   pillar_position_0.
+WARNING:Simulator:13 - For instance /testbench/top/vga_show1/pipe/, width 1 of
+   formal port position_1_h is not equal to width 9 of actual signal
+   pillar_height_0.
+WARNING:Simulator:13 - For instance /testbench/top/vga_show1/pipe/, width 1 of
+   formal port position_2_v is not equal to width 9 of actual signal
+   pillar_position_1.
+WARNING:Simulator:13 - For instance /testbench/top/vga_show1/pipe/, width 1 of
+   formal port position_2_h is not equal to width 9 of actual signal
+   pillar_position_1.
+Total Line Count = 268
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 38.7809 Meg. 
+
+ Total signals 132
+ Total nets 193
+ Total signal drivers 41
+ Total blocks 10
+ Total primitive blocks 6
+ Total processes 38
+ntrace select -o on -m / -l this 
+ntrace start 
+run 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

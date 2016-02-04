@@ -1,0 +1,7 @@
+# Output products list for <bird_0>
+bird_0.edn
+bird_0.mif
+bird_0.v
+bird_0.veo
+bird_0.xco
+bird_0_flist.txt

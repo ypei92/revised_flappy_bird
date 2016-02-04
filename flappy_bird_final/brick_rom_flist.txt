@@ -1,0 +1,7 @@
+# Output products list for <brick_rom>
+brick_rom.mif
+brick_rom.ngc
+brick_rom.v
+brick_rom.veo
+brick_rom.xco
+brick_rom_flist.txt

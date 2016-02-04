@@ -1,0 +1,20 @@
+# Date: Mon Jul 21 04:52:58 2014
+SET flowvendor = Other
+SET vhdlsim = False
+SET verilogsim = True
+SET workingdirectory = C:\Xilinx\8.2i\project\flappy_bird\peas_rom\tmp
+SET speedgrade = -6
+SET simulationfiles = Behavioral
+SET asysymbol = False
+SET addpads = False
+SET device = xc2vp30
+SET implementationfiletype = Edif
+SET busformat = BusFormatAngleBracketNotRipped
+SET foundationsym = False
+SET package = ff896
+SET createndf = False
+SET designentry = Verilog
+SET devicefamily = virtex2p
+SET formalverification = False
+SET removerpms = False
+

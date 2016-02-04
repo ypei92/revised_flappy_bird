@@ -1,0 +1,3 @@
+verilog work "random_256_gen.v"
+verilog work "bird_info_gen.v"
+verilog work "control.v"

@@ -1,0 +1,243 @@
+Release 8.2i par I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+
+MICROE-LAB::  Wed Jul 23 14:52:19 2014
+
+par -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+
+
+Constraints file: top.pcf.
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx\8.2i.
+   "top" is an NCD, version 3.1, device xc2vp30, package ff896, speed -6
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.400 Volts. (default - Range: 1.400 to 1.600 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. The PAR timing summary will list the performance achieved for each clock. Note: For
+   the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high". For a
+   balance between the fastest runtime and best performance, set the effort level to "med".
+
+Device speed data version:  "PRODUCTION 1.92 2006-05-03".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                  4 out of 16     25%
+   Number of External IOBs            33 out of 556     5%
+      Number of LOCed IOBs            33 out of 33    100%
+
+   Number of MULT18X18s               10 out of 136     7%
+   Number of RAMB16s                  76 out of 136    55%
+   Number of SLICEs                 2425 out of 13696  17%
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:99117f) REAL time: 5 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 5 secs 
+
+Phase 3.2
+......
+.................
+
+
+Phase 3.2 (Checksum:98b4cd) REAL time: 10 secs 
+
+Phase 4.30
+Phase 4.30 (Checksum:26259fc) REAL time: 10 secs 
+
+Phase 5.3
+Phase 5.3 (Checksum:2faf07b) REAL time: 10 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 11 secs 
+
+Phase 7.8
+...............................................................................................................................................
+...
+.............................................................................
+......
+.....
+...............................................
+Phase 7.8 (Checksum:13047ae) REAL time: 26 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 26 secs 
+
+Phase 9.18
+Phase 9.18 (Checksum:55d4a77) REAL time: 36 secs 
+
+Phase 10.5
+Phase 10.5 (Checksum:5f5e0f6) REAL time: 36 secs 
+
+Phase 11.27
+Phase 11.27 (Checksum:68e7775) REAL time: 36 secs 
+
+Phase 12.24
+Phase 12.24 (Checksum:7270df4) REAL time: 36 secs 
+
+Writing design to file top.ncd
+
+
+Total REAL time to Placer completion: 38 secs 
+Total CPU time to Placer completion: 36 secs 
+
+Starting Router
+
+Phase 1: 20466 unrouted;       REAL time: 44 secs 
+
+Phase 2: 18869 unrouted;       REAL time: 45 secs 
+
+Phase 3: 5472 unrouted;       REAL time: 48 secs 
+
+Phase 4: 5472 unrouted; (203843)      REAL time: 48 secs 
+
+Phase 5: 5492 unrouted; (0)      REAL time: 49 secs 
+
+Phase 6: 0 unrouted; (0)      REAL time: 52 secs 
+
+Phase 7: 0 unrouted; (0)      REAL time: 54 secs 
+
+Phase 8: 0 unrouted; (0)      REAL time: 54 secs 
+
+Phase 9: 0 unrouted; (0)      REAL time: 54 secs 
+
+WARNING:Route:447 - CLK Net:vga_show1/number/black_white_select<1> may have excessive skew because 
+   1 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:447 - CLK Net:vga_show1/pipe/stripe_valid may have excessive skew because 
+   1 CLK pins and 13 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:447 - CLK Net:clk_div1/clk_60hz may have excessive skew because 
+   1 NON-CLK pins failed to route using a CLK template.
+WARNING:Route:447 - CLK Net:clk_div1/clk_25mhz may have excessive skew because 
+   1 NON-CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 54 secs 
+Total CPU time to Router completion: 52 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|   clk_div1/clk_60hz |     BUFGMUX5S| No   |  172 |  0.293     |  1.406      |
++---------------------+--------------+------+------+------------+-------------+
+|  clk_div1/clk_25mhz |     BUFGMUX4S| No   |  288 |  0.293     |  1.428      |
++---------------------+--------------+------+------+------------+-------------+
+|       clk_ps2_BUFGP |     BUFGMUX1S| No   |   17 |  0.054     |  1.429      |
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP |     BUFGMUX0P| No   |   30 |  0.108     |  1.371      |
++---------------------+--------------+------+------+------------+-------------+
+|vga_show1/pipe/strip |              |      |      |            |             |
+|             e_valid |         Local|      |   14 |  0.000     |  2.248      |
++---------------------+--------------+------+------+------------+-------------+
+|vga_show1/Peashooter |              |      |      |            |             |
+|      _show/_not0003 |         Local|      |    6 |  0.025     |  1.429      |
++---------------------+--------------+------+------+------------+-------------+
+|vga_show1/Intro_show |              |      |      |            |             |
+|            /_or0000 |         Local|      |    7 |  0.037     |  1.418      |
++---------------------+--------------+------+------+------------+-------------+
+|vga_show1/Life_show/ |              |      |      |            |             |
+|            _not0004 |         Local|      |    6 |  0.058     |  1.420      |
++---------------------+--------------+------+------+------------+-------------+
+|vga_show1/Bird_show/ |              |      |      |            |             |
+|             _or0000 |         Local|      |    6 |  0.014     |  1.412      |
++---------------------+--------------+------+------+------------+-------------+
+|vga_show1/number/bla |              |      |      |            |             |
+|  ck_white_select<1> |         Local|      |    3 |  0.000     |  1.944      |
++---------------------+--------------+------+------+------------+-------------+
+|vga_show1/number/_no |              |      |      |            |             |
+|               t0003 |         Local|      |    2 |  0.033     |  1.156      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+
+   The Delay Summary Report
+
+
+The NUMBER OF SIGNALS NOT COMPLETELY ROUTED for this design is: 0
+
+   The AVERAGE CONNECTION DELAY for this design is:        1.289
+   The MAXIMUM PIN DELAY IS:                               6.990
+   The AVERAGE CONNECTION DELAY on the 10 WORST NETS is:   6.203
+
+   Listing Pin Delays by value: (nsec)
+
+    d < 1.00   < d < 2.00  < d < 3.00  < d < 4.00  < d < 7.00  d >= 7.00
+   ---------   ---------   ---------   ---------   ---------   ---------
+        9013        5776        2401         973         480           0
+
+Timing Score: 0
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                | Requested  | Actual     | Logic  | Absolute   |Number of
+                                            |            |            | Levels | Slack      |errors   
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | N/A        | 9.658ns    | 8      | N/A        | N/A     
+  _div1/clk_60hz                            |            |            |        |            |         
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | N/A        | 18.374ns   | 15     | N/A        | N/A     
+  _div1/clk_25mhz                           |            |            |        |            |         
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | N/A        | 3.867ns    | 2      | N/A        | N/A     
+  _ps2_BUFGP                                |            |            |        |            |         
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | N/A        | 3.905ns    | 3      | N/A        | N/A     
+  _BUFGP                                    |            |            |        |            |         
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 57 secs 
+Total CPU time to PAR completion: 54 secs 
+
+Peak Memory Usage:  328 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 4
+Number of info messages: 1
+
+Writing design to file top.ncd
+
+
+
+PAR done!

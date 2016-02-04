@@ -1,0 +1,7 @@
+# Output products list for <score_intro_rom>
+score_intro_rom.mif
+score_intro_rom.ngc
+score_intro_rom.v
+score_intro_rom.veo
+score_intro_rom.xco
+score_intro_rom_flist.txt

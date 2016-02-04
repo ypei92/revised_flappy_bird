@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">Bird_show.v</arg>&quot; line <arg fmt="%d" index="2">86</arg>: The signals &lt;<arg fmt="%s" index="3">body_color</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">bird_0.v</arg>&quot; line <arg fmt="%d" index="2">76</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">bird_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">bird_angle</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">bird_color_select</arg>&gt; is never used.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">bird_pixel_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Bird_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bird_pixel_10&gt; &lt;bird_pixel_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">bird_pixel_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Bird_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bird_pixel_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">bird_pixel_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Bird_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bird_pixel_14&gt; &lt;bird_pixel_20&gt; &lt;bird_pixel_21&gt; &lt;bird_pixel_22&gt; &lt;bird_pixel_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">bird_pixel_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Bird_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bird_pixel_6&gt; &lt;bird_pixel_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">bird_pixel_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Bird_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bird_pixel_8&gt; &lt;bird_pixel_11&gt; &lt;bird_pixel_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">bird_pixel_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Bird_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bird_pixel_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">bird_pixel_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Bird_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bird_pixel_12&gt; &lt;bird_pixel_15&gt; </arg>
+</msg>
+
+</messages>

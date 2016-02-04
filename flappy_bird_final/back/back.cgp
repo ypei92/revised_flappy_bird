@@ -1,0 +1,20 @@
+# Date: Thu Jul 02 07:19:36 2009
+SET flowvendor = Other
+SET vhdlsim = False
+SET verilogsim = True
+SET workingdirectory = c:\Xilinx\8.2i\bin\nt\back\tmp
+SET speedgrade = -7
+SET simulationfiles = Behavioral
+SET asysymbol = False
+SET addpads = False
+SET device = xc2vp30
+SET implementationfiletype = Edif
+SET busformat = BusFormatAngleBracketNotRipped
+SET foundationsym = False
+SET package = ff896
+SET createndf = False
+SET designentry = Verilog
+SET devicefamily = virtex2p
+SET formalverification = False
+SET removerpms = False
+

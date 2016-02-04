@@ -1,0 +1,7 @@
+# Output products list for <bird_rom>
+bird_rom.mif
+bird_rom.ngc
+bird_rom.v
+bird_rom.veo
+bird_rom.xco
+bird_rom_flist.txt

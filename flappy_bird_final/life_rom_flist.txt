@@ -1,0 +1,7 @@
+# Output products list for <life_rom>
+life_rom.mif
+life_rom.ngc
+life_rom.v
+life_rom.veo
+life_rom.xco
+life_rom_flist.txt

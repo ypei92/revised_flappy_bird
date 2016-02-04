@@ -1,0 +1,7 @@
+# Output products list for <bgd>
+bgd.mif
+bgd.ngc
+bgd.v
+bgd.veo
+bgd.xco
+bgd_flist.txt

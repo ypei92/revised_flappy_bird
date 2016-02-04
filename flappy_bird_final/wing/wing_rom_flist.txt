@@ -1,0 +1,7 @@
+# Output products list for <wing_rom>
+wing_rom.mif
+wing_rom.ngc
+wing_rom.v
+wing_rom.veo
+wing_rom.xco
+wing_rom_flist.txt

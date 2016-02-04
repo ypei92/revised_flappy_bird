@@ -1,0 +1,74 @@
+--------------------------------------------------------------------------------
+Release 8.2i Trace 
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\8.2i\bin\nt\trce.exe -ise
+C:/Xilinx/8.2i/project/flappy_bird/flappy_bird.ise -intstyle ise -e 3 -l 3 -s 6
+-xml top top.ncd -o top.twr top.pcf -ucf top.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,speed:             xc2vp30,-6 (PRODUCTION 1.92 2006-05-03)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_ps2
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+data_ps2    |    1.032(F)|    2.220(F)|clk_ps2_BUFGP     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+vga_clk     |    5.790(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.905|         |         |         |
+clk_ps2        |         |    2.175|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_ps2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_ps2        |         |         |         |    3.867|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Jul 23 14:53:24 2014
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 224 MB
+
+
+

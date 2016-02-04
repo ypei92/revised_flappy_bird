@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="261" delta="unknown" ><arg fmt="%s" index="1">&quot;top.v&quot; line 107 </arg>Connection to output port &apos;<arg fmt="%s" index="2">bird_height</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;control.v&quot; line 488 </arg>Connection to input port &apos;<arg fmt="%s" index="2">bird_tap_time</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;vga_show.v&quot; line 159 </arg>Connection to input port &apos;<arg fmt="%s" index="2">current_print_column</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;vga_show.v&quot; line 178 </arg>Connection to input port &apos;<arg fmt="%s" index="2">h_line</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;vga_show.v&quot; line 179 </arg>Connection to input port &apos;<arg fmt="%s" index="2">v_line</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;vga_show.v&quot; line 202 </arg>Connection to input port &apos;<arg fmt="%s" index="2">h_line</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;vga_show.v&quot; line 203 </arg>Connection to input port &apos;<arg fmt="%s" index="2">v_line</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;number.v&quot; line 109 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;number.v&quot; line 114 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;number.v&quot; line 119 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;number.v&quot; line 124 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;number.v&quot; line 129 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;number.v&quot; line 134 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;number.v&quot; line 140 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;number.v&quot; line 146 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;vga_show.v&quot; line 230 </arg>Connection to input port &apos;<arg fmt="%s" index="2">bird_height</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;vga_show.v&quot; line 250 </arg>Connection to input port &apos;<arg fmt="%s" index="2">wing_height</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;vga_show.v&quot; line 253 </arg>Connection to input port &apos;<arg fmt="%s" index="2">wing_state</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;Peashooter_show.v&quot; line 165 </arg>Connection to input port &apos;<arg fmt="%s" index="2">addra</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">control.v</arg>&quot; line <arg fmt="%d" index="2">424</arg>: The signals &lt;<arg fmt="%s" index="3">random_256_2, random_256_1</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="852" delta="unknown" >&quot;<arg fmt="%s" index="1">vga_show.v</arg>&quot; line <arg fmt="%d" index="2">158</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">valid_array</arg>&apos; of instance &apos;<arg fmt="%s" index="4">back</arg>&apos; is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">bgd.v</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">bgd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">pipe.v</arg>&quot; line <arg fmt="%d" index="2">97</arg>: The signals &lt;<arg fmt="%s" index="3">gap_width, stripe_valid</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">pipe.v</arg>&quot; line <arg fmt="%d" index="2">126</arg>: The signals &lt;<arg fmt="%s" index="3">gap_width</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">pipe.v</arg>&quot; line <arg fmt="%d" index="2">219</arg>: The signals &lt;<arg fmt="%s" index="3">gap_width</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">pipe.v</arg>&quot; line <arg fmt="%d" index="2">232</arg>: The signals &lt;<arg fmt="%s" index="3">gap_width</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">pipe.v</arg>&quot; line <arg fmt="%d" index="2">275</arg>: The signals &lt;<arg fmt="%s" index="3">gap_width</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">pipe.v</arg>&quot; line <arg fmt="%d" index="2">290</arg>: The signals &lt;<arg fmt="%s" index="3">gap_width</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">pipe.v</arg>&quot; line <arg fmt="%d" index="2">306</arg>: The signals &lt;<arg fmt="%s" index="3">stripe_valid, position_stripe</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">pipe.v</arg>&quot; line <arg fmt="%d" index="2">333</arg>: The signals &lt;<arg fmt="%s" index="3">state_1, state_3, gap_width, state_2, state_4, state_5, state_7, state_6, state_8</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">number.v</arg>&quot; line <arg fmt="%d" index="2">307</arg>: The signals &lt;<arg fmt="%s" index="3">state_1, state_2, state_3, state_4, state_5, state_6, state_7, state_8</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">num_rom.v</arg>&quot; line <arg fmt="%d" index="2">107</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">num_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">num_rom.v</arg>&quot; line <arg fmt="%d" index="2">112</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">num_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">num_rom.v</arg>&quot; line <arg fmt="%d" index="2">117</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">num_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">num_rom.v</arg>&quot; line <arg fmt="%d" index="2">122</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">num_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">num_rom.v</arg>&quot; line <arg fmt="%d" index="2">127</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">num_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">num_rom.v</arg>&quot; line <arg fmt="%d" index="2">132</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">num_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">num_rom.v</arg>&quot; line <arg fmt="%d" index="2">138</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">num_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">num_rom.v</arg>&quot; line <arg fmt="%d" index="2">144</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">num_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">Bird_show.v</arg>&quot; line <arg fmt="%d" index="2">114</arg>: The signals &lt;<arg fmt="%s" index="3">body_color, lip_color</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">bird_rom.v</arg>&quot; line <arg fmt="%d" index="2">82</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">bird_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="905" delta="unknown" >&quot;<arg fmt="%s" index="1">Wing_show.v</arg>&quot; line <arg fmt="%d" index="2">119</arg>: The signals &lt;<arg fmt="%s" index="3">wing_color, wing_color_select</arg>&gt; are missing in the sensitivity list of always block.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">wing_rom.v</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">wing_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">peashooter_rom_0.v</arg>&quot; line <arg fmt="%d" index="2">146</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">peashooter_rom_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">peashooter_rom_1.v</arg>&quot; line <arg fmt="%d" index="2">151</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">peashooter_rom_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">peashooter_rom_2.v</arg>&quot; line <arg fmt="%d" index="2">156</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">peashooter_rom_2</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">cloud_rom.v</arg>&quot; line <arg fmt="%d" index="2">163</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">cloud_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">peas_rom.v</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">peas_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">brick_rom.v</arg>&quot; line <arg fmt="%d" index="2">30</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">brick_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">life_rom.v</arg>&quot; line <arg fmt="%d" index="2">64</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">life_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">intro_rom.v</arg>&quot; line <arg fmt="%d" index="2">119</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">intro_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="unknown" >&quot;<arg fmt="%s" index="1">score_intro_rom.v</arg>&quot; line <arg fmt="%d" index="2">124</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">score_intro_rom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">stripe_b</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="unknown" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">stripe_color_mux</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">right</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">left</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="1305" delta="unknown" >Output &lt;<arg fmt="%s" index="1">shooter_valid</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">down</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">random_256_2&lt;6:3&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">valid_array</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">back.v</arg>&quot; line <arg fmt="%d" index="2">77</arg>: The result of a <arg fmt="%d" index="3">10</arg>x<arg fmt="%d" index="4">8</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">14</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">back.v</arg>&quot; line <arg fmt="%d" index="2">79</arg>: The result of a <arg fmt="%d" index="3">11</arg>x<arg fmt="%d" index="4">9</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">14</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">back.v</arg>&quot; line <arg fmt="%d" index="2">81</arg>: The result of a <arg fmt="%d" index="3">11</arg>x<arg fmt="%d" index="4">9</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">14</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">back.v</arg>&quot; line <arg fmt="%d" index="2">83</arg>: The result of a <arg fmt="%d" index="3">11</arg>x<arg fmt="%d" index="4">9</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">14</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">add_1&lt;8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">add_2&lt;8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">add_3&lt;8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">add_4&lt;8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">add_5&lt;8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">add_6&lt;8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">add_7&lt;8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">add_8&lt;8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="unknown" >Found <arg fmt="%d" index="1">24</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">color_out</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="unknown" >Found <arg fmt="%d" index="1">2</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">black_white_select</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="unknown" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="unknown" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">rom_output_select</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="unknown" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="unknown" >Found <arg fmt="%d" index="1">3</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">rom_output_select</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="unknown" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">body_color</arg>&gt; is never used or assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">rom_address_cloud&lt;12&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">Peashooter_show.v</arg>&quot; line <arg fmt="%d" index="2">143</arg>: The result of a <arg fmt="%d" index="3">7</arg>x<arg fmt="%d" index="4">7</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">13</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">Peashooter_show.v</arg>&quot; line <arg fmt="%d" index="2">139</arg>: The result of a <arg fmt="%d" index="3">7</arg>x<arg fmt="%d" index="4">7</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">13</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="unknown" >Found <arg fmt="%d" index="1">6</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">rom_output_select</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="unknown" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">rst_n</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">v_line&lt;9:6&gt;</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">color_select&lt;1&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">h_line_revised&lt;9:6&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">row_in_pic&lt;9:6&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">column_in_pic&lt;9:8&gt;</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="unknown" >Found <arg fmt="%d" index="1">24</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">pixel_output</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="unknown" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">Intro_show.v</arg>&quot; line <arg fmt="%d" index="2">116</arg>: The result of a <arg fmt="%d" index="3">10</arg>x<arg fmt="%d" index="4">6</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">10</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">Intro_show.v</arg>&quot; line <arg fmt="%d" index="2">110</arg>: The result of a <arg fmt="%d" index="3">10</arg>x<arg fmt="%d" index="4">8</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">14</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="unknown" >Found <arg fmt="%d" index="1">24</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">pixel_output_intro</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2371" delta="unknown" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">clk_2hz</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">shooter_valid</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">bird_height&lt;9&gt;</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">background_select</arg>&gt; is never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">xx_last</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">yy_last</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">clk_400hz</arg>&gt; is assigned but never used.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="unknown" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">wing_pixel_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wing_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">11 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wing_pixel_4&gt; &lt;wing_pixel_9&gt; &lt;wing_pixel_12&gt; &lt;wing_pixel_13&gt; &lt;wing_pixel_14&gt; &lt;wing_pixel_15&gt; &lt;wing_pixel_19&gt; &lt;wing_pixel_20&gt; &lt;wing_pixel_21&gt; &lt;wing_pixel_22&gt; &lt;wing_pixel_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">wing_pixel_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Wing_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">11 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;wing_pixel_2&gt; &lt;wing_pixel_3&gt; &lt;wing_pixel_5&gt; &lt;wing_pixel_6&gt; &lt;wing_pixel_7&gt; &lt;wing_pixel_8&gt; &lt;wing_pixel_10&gt; &lt;wing_pixel_11&gt; &lt;wing_pixel_16&gt; &lt;wing_pixel_17&gt; &lt;wing_pixel_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">score_intro_pixel_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Intro_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;score_intro_pixel_15&gt; &lt;score_intro_pixel_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">score_intro_pixel_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Intro_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">20 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;score_intro_pixel_1&gt; &lt;score_intro_pixel_2&gt; &lt;score_intro_pixel_3&gt; &lt;score_intro_pixel_4&gt; &lt;score_intro_pixel_5&gt; &lt;score_intro_pixel_6&gt; &lt;score_intro_pixel_8&gt; &lt;score_intro_pixel_9&gt; &lt;score_intro_pixel_10&gt; &lt;score_intro_pixel_11&gt; &lt;score_intro_pixel_12&gt; &lt;score_intro_pixel_13&gt; &lt;score_intro_pixel_14&gt; &lt;score_intro_pixel_16&gt; &lt;score_intro_pixel_17&gt; &lt;score_intro_pixel_18&gt; &lt;score_intro_pixel_19&gt; &lt;score_intro_pixel_20&gt; &lt;score_intro_pixel_21&gt; &lt;score_intro_pixel_22&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_2hz</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">clk_div1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_400hz</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">clk_div1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">game_mode</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">pillar_move_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">pillar_move_1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_ge0000</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_ge0012</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_18</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_le0001</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_le0010</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_21</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_ge0002</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_ge0015</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_18</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_le0003</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_le0013</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_21</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_le0004</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_le0011</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_21</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_le0005</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_le0014</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_21</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_ge0006</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_ge0017</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_18</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_ge0007</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_ge0013</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_18</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_ge0008</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_ge0018</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_18</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_ge0009</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_ge0016</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_18</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1988" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">pipe</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_le0018</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_gt0000</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_29</arg>&gt; and unit &lt;<arg fmt="%s" index="5">LPM_COMPARE_31</arg>&gt; are dual, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1988" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">Intro_show</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_ge0000</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_lt0002</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_84</arg>&gt; and unit &lt;<arg fmt="%s" index="5">LPM_COMPARE_90</arg>&gt; are dual, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1988" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">vga_show</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_gt0000</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_le0000</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_94</arg>&gt; and unit &lt;<arg fmt="%s" index="5">LPM_COMPARE_95</arg>&gt; are dual, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1988" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">vga_show</arg>&gt;: instances &lt;<arg fmt="%s" index="2">Mcompar__cmp_gt0001</arg>&gt;, &lt;<arg fmt="%s" index="3">Mcompar__cmp_le0001</arg>&gt; of unit &lt;<arg fmt="%s" index="4">LPM_COMPARE_94</arg>&gt; and unit &lt;<arg fmt="%s" index="5">LPM_COMPARE_95</arg>&gt; are dual, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">pillar_speed_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">pillar_move_1_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">pillar_move_0_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">game_mode_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">peas_pixel_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Peas_show</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch  &lt;<arg fmt="%s" index="1">peas_pixel_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Peas_show</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch  &lt;<arg fmt="%s" index="1">peas_pixel_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Peas_show</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch  &lt;<arg fmt="%s" index="1">peas_pixel_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Peas_show</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch  &lt;<arg fmt="%s" index="1">peas_pixel_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Peas_show</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch  &lt;<arg fmt="%s" index="1">peas_pixel_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Peas_show</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch  &lt;<arg fmt="%s" index="1">peas_pixel_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Peas_show</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch  &lt;<arg fmt="%s" index="1">peas_pixel_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Peas_show</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">peas_x_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch  &lt;<arg fmt="%s" index="1">intro_height_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_output_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_output_6&gt; &lt;pixel_output_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_output_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_output_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_output_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_output_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_output_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_output_12&gt; &lt;pixel_output_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_output_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_output_11&gt; &lt;pixel_output_8&gt; &lt;pixel_output_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_output_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_output_10&gt; &lt;pixel_output_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_output_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_output_22&gt; &lt;pixel_output_21&gt; &lt;pixel_output_20&gt; &lt;pixel_output_14&gt; &lt;pixel_output_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">life_pixel_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;life_pixel_10&gt; &lt;life_pixel_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">life_pixel_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;life_pixel_14&gt; &lt;life_pixel_20&gt; &lt;life_pixel_21&gt; &lt;life_pixel_22&gt; &lt;life_pixel_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">life_pixel_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;life_pixel_12&gt; &lt;life_pixel_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">life_pixel_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;life_pixel_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">life_pixel_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;life_pixel_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">life_pixel_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;life_pixel_6&gt; &lt;life_pixel_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">life_pixel_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Life_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;life_pixel_8&gt; &lt;life_pixel_11&gt; &lt;life_pixel_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">peas_pixel_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Peas_show</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;peas_pixel_17&gt; &lt;peas_pixel_18&gt; &lt;peas_pixel_19&gt; &lt;peas_pixel_20&gt; &lt;peas_pixel_21&gt; &lt;peas_pixel_22&gt; &lt;peas_pixel_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">color_out_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">number</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">23 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;color_out_22&gt; &lt;color_out_21&gt; &lt;color_out_20&gt; &lt;color_out_19&gt; &lt;color_out_18&gt; &lt;color_out_17&gt; &lt;color_out_16&gt; &lt;color_out_15&gt; &lt;color_out_14&gt; &lt;color_out_13&gt; &lt;color_out_12&gt; &lt;color_out_11&gt; &lt;color_out_10&gt; &lt;color_out_9&gt; &lt;color_out_8&gt; &lt;color_out_7&gt; &lt;color_out_6&gt; &lt;color_out_5&gt; &lt;color_out_4&gt; &lt;color_out_3&gt; &lt;color_out_2&gt; &lt;color_out_1&gt; &lt;color_out_0&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">pipe</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">pillar_speed_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">gap_width_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">gap_width_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">gap_width_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch  &lt;<arg fmt="%s" index="1">gap_width_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">control</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">control1/position_stripe_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">control1/position_stripe_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">control1/position_stripe_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">control1/position_stripe_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">control1/position_stripe_8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/clk_2hz</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/clk_400hz</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_9</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter4_16</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_9</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_13</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_14</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_15</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_16</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_17</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_18</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_19</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_20</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_21</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_22</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_23</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_24</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1291" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">clk_div1/counter3_25</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/pixel_output_intro_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/pixel_output_intro_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/pixel_output_intro_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/pixel_output_intro_21&gt; &lt;vga_show1/Intro_show/pixel_output_intro_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Bird_show/bird_pixel_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Bird_show/bird_pixel_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Peas_show/peas_pixel_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Peas_show/peas_pixel_9&gt; &lt;vga_show1/Peas_show/peas_pixel_10&gt; &lt;vga_show1/Peas_show/peas_pixel_11&gt; &lt;vga_show1/Peas_show/peas_pixel_12&gt; &lt;vga_show1/Peas_show/peas_pixel_13&gt; &lt;vga_show1/Peas_show/peas_pixel_14&gt; &lt;vga_show1/Peas_show/peas_pixel_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Bird_show/bird_pixel_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Bird_show/bird_pixel_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Bird_show/bird_pixel_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Bird_show/bird_pixel_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Bird_show/bird_pixel_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Bird_show/bird_pixel_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/pixel_output_intro_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/pixel_output_intro_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Bird_show/bird_pixel_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Bird_show/bird_pixel_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/pixel_output_intro_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/pixel_output_intro_16&gt; &lt;vga_show1/Intro_show/pixel_output_intro_10&gt; &lt;vga_show1/Intro_show/pixel_output_intro_9&gt; &lt;vga_show1/Intro_show/pixel_output_intro_8&gt; &lt;vga_show1/Intro_show/pixel_output_intro_7&gt; &lt;vga_show1/Intro_show/pixel_output_intro_5&gt; &lt;vga_show1/Intro_show/pixel_output_intro_2&gt; &lt;vga_show1/Intro_show/pixel_output_intro_1&gt; &lt;vga_show1/Intro_show/pixel_output_intro_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Bird_show/bird_pixel_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Bird_show/bird_pixel_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/pixel_output_intro_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/pixel_output_intro_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/intro_pixel_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/intro_pixel_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/intro_pixel_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/intro_pixel_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/intro_pixel_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/intro_pixel_21&gt; &lt;vga_show1/Intro_show/intro_pixel_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/intro_pixel_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">9 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/intro_pixel_1&gt; &lt;vga_show1/Intro_show/intro_pixel_2&gt; &lt;vga_show1/Intro_show/intro_pixel_5&gt; &lt;vga_show1/Intro_show/intro_pixel_7&gt; &lt;vga_show1/Intro_show/intro_pixel_8&gt; &lt;vga_show1/Intro_show/intro_pixel_9&gt; &lt;vga_show1/Intro_show/intro_pixel_10&gt; &lt;vga_show1/Intro_show/intro_pixel_16&gt; &lt;vga_show1/Intro_show/intro_pixel_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">vga_show1/Intro_show/intro_pixel_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;vga_show1/Intro_show/intro_pixel_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_0</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_1</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_2</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_3</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_4</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_5</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_6</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_7</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_8</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_10</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_11</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_12</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_13</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_14</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">ps2_ctlr1/ps2_data_syn2_15</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">control1/random_256_gen2/random_5</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">2</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">control1/random_256_gen2/random_3</arg>&gt; and currently occupies <arg fmt="%d" index="3">2</arg> logic cells (<arg fmt="%d" index="4">1</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">5</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">control1/random_256_gen2/random_7</arg>&gt; and currently occupies <arg fmt="%d" index="3">5</arg> logic cells (<arg fmt="%d" index="4">2</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2387" delta="unknown" >HDL ADVISOR - A <arg fmt="%d" index="1">5</arg>-bit shift register was found for signal &lt;<arg fmt="%s" index="2">control1/random_256_gen1/random_7</arg>&gt; and currently occupies <arg fmt="%d" index="3">5</arg> logic cells (<arg fmt="%d" index="4">2</arg> slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="unknown" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>

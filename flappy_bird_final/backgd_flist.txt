@@ -1,0 +1,7 @@
+# Output products list for <backgd>
+backgd.mif
+backgd.ngc
+backgd.v
+backgd.veo
+backgd.xco
+backgd_flist.txt

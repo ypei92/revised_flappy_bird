@@ -1,0 +1,7 @@
+# Output products list for <intro_rom>
+intro_rom.mif
+intro_rom.ngc
+intro_rom.v
+intro_rom.veo
+intro_rom.xco
+intro_rom_flist.txt

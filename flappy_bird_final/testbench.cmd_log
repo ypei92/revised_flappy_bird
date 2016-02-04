@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx/8.2i/project/flappy_bird/flappy_bird.ise" -intstyle ise -ifn testbench.xst -ofn testbench.syr

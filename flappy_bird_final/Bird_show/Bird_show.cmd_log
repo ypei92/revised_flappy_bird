@@ -1,0 +1,2 @@
+xst -ise "C:/Flappy_bird/Bird_show/Bird_show.ise" -intstyle ise -ifn Bird_show.xst -ofn Bird_show.syr
+xst -ise "C:/Flappy_bird/Bird_show/Bird_show.ise" -intstyle ise -ifn Bird_show.xst -ofn Bird_show.syr

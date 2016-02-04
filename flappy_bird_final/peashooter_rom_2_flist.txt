@@ -1,0 +1,7 @@
+# Output products list for <peashooter_rom_2>
+peashooter_rom_2.mif
+peashooter_rom_2.ngc
+peashooter_rom_2.v
+peashooter_rom_2.veo
+peashooter_rom_2.xco
+peashooter_rom_2_flist.txt

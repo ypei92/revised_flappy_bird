@@ -1,0 +1,2207 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.09 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.09 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc2vp30-6-ff896
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : top.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+tristate2logic                     : Yes
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "wing_rom.v" in library work
+Compiling verilog file "score_intro_rom.v" in library work
+Module <wing_rom> compiled
+Compiling verilog file "peashooter_rom_2.v" in library work
+Module <score_intro_rom> compiled
+Compiling verilog file "peashooter_rom_1.v" in library work
+Module <peashooter_rom_2> compiled
+Compiling verilog file "peas_rom.v" in library work
+Module <peashooter_rom_1> compiled
+Compiling verilog file "num_rom.v" in library work
+Module <peas_rom> compiled
+Compiling verilog file "life_rom.v" in library work
+Module <num_rom> compiled
+Compiling verilog file "intro_rom.v" in library work
+Module <life_rom> compiled
+Compiling verilog file "cloud_rom.v" in library work
+Module <intro_rom> compiled
+Compiling verilog file "brick_rom.v" in library work
+Module <cloud_rom> compiled
+Compiling verilog file "random_256_gen.v" in library work
+Module <brick_rom> compiled
+Compiling verilog file "ps2_kbd_driver.v" in library work
+Module <random_256_gen> compiled
+Compiling verilog file "pipe.v" in library work
+Module <ps2_kbd_driver> compiled
+Compiling verilog file "number.v" in library work
+Module <pipe> compiled
+Compiling verilog file "brick.v" in library work
+Module <number> compiled
+Compiling verilog file "bird_info_gen.v" in library work
+Module <brick> compiled
+Compiling verilog file "back.v" in library work
+Module <bird_info_gen> compiled
+Compiling verilog file "Wing_show.v" in library work
+Module <back> compiled
+Compiling verilog file "VGA.v" in library work
+Module <Wing_show> compiled
+Compiling verilog file "Peashooter_show.v" in library work
+Module <VGA> compiled
+Compiling verilog file "Peas_show.v" in library work
+Module <Peashooter_show> compiled
+Compiling verilog file "Life_show.v" in library work
+Module <Peas_show> compiled
+Compiling verilog file "Intro_show.v" in library work
+Module <Life_show> compiled
+Compiling verilog file "Bird_show.v" in library work
+Module <Intro_show> compiled
+Compiling verilog file "vga_show.v" in library work
+Module <Bird_show> compiled
+Compiling verilog file "ps2_ctlr.v" in library work
+Module <vga_show> compiled
+Compiling verilog file "control.v" in library work
+Module <ps2_ctlr> compiled
+Compiling verilog file "clk_div.v" in library work
+Module <control> compiled
+Compiling verilog file "top.v" in library work
+Module <clk_div> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <clk_div> in library <work>.
+
+Analyzing hierarchy for module <ps2_ctlr> in library <work> with parameters.
+	CHOOSE1 = "00000000000000000000000000000100"
+	CHOOSE2 = "00000000000000000000000000000101"
+	DOWN = "00000000000000000000000000000011"
+	ENTER = "00000000000000000000000000001011"
+	INVALID = "00000000000000000000000000001101"
+	LEFT = "00000000000000000000000000000000"
+	RIGHT = "00000000000000000000000000000001"
+	UP = "00000000000000000000000000000010"
+	UP2 = "00000000000000000000000000000111"
+
+Analyzing hierarchy for module <control> in library <work> with parameters.
+	ADD_SCORE_POINT = "001100100"
+	BIRD_DOWN_MAX = "00000000000000000000000000101000"
+	BIRD_UP_MAX = "00000000000000000000000111100000"
+	CHEAT_MODE = "00000000000000000000000000000011"
+	DEAD = "00000000000000000000000000000100"
+	INITIAL_GAME = "00000000000000000000000000000001"
+	MODE_MOVE = "00000000000000000000000000000001"
+	MODE_NORMAL = "00000000000000000000000000000000"
+	NORMAL_MODE = "00000000000000000000000000000010"
+	UP_PILLAR_BOTTOM = "011001000"
+	WELCOME = "00000000000000000000000000000000"
+
+Analyzing hierarchy for module <vga_show> in library <work>.
+
+Analyzing hierarchy for module <ps2_kbd_driver> in library <work>.
+
+Analyzing hierarchy for module <random_256_gen> in library <work>.
+
+Analyzing hierarchy for module <bird_info_gen> in library <work>.
+
+Analyzing hierarchy for module <VGA> in library <work> with parameters.
+	H_ACTIVE_REGION = "00000000000000000000001010000000"
+	H_BACK_PORCH = "00000000000000000000000000110000"
+	H_FRONT_PORCH = "00000000000000000000000000010000"
+	H_PIXELS = "00000000000000000000001100100000"
+	H_SYSC_PERIOD = "00000000000000000000000001100000"
+	V_ACTIVE_REGION = "00000000000000000000000111100000"
+	V_BACK_PORCH = "00000000000000000000000000011101"
+	V_FRONT_PORCH = "00000000000000000000000000001010"
+	V_LINES = "00000000000000000000001000001001"
+	V_SYSC_PERIOD = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <back> in library <work>.
+
+Analyzing hierarchy for module <pipe> in library <work> with parameters.
+	blank_height = "0000011110"
+	color_1 = "110100101110110001111101"
+	color_10 = "101101111101010101101010"
+	color_11 = "101011001100110001100010"
+	color_12 = "101000101100001101011010"
+	color_13 = "100110001011101001010011"
+	color_14 = "100011011011000001001011"
+	color_15 = "100000111010100001000100"
+	color_16 = "011110011010000000111100"
+	color_17 = "011100001001011100110101"
+	color_18 = "011010001001000000110000"
+	color_19 = "011000011000101000101010"
+	color_2 = "110110011111001110000011"
+	color_20 = "010110101000010000100101"
+	color_21 = "010101011000000000100010"
+	color_3 = "110111111111100010000111"
+	color_4 = "111001001111110110001011"
+	color_5 = "110111111111100010000111"
+	color_6 = "110110011111010010000010"
+	color_7 = "110100011110110001111101"
+	color_8 = "110010011110011001110111"
+	color_9 = "110000001101111001110000"
+	head_width = "0000010100"
+	pipe_retract = "0000000010"
+	pipe_width = "0000110100"
+	stripe_height = "0000010100"
+
+Analyzing hierarchy for module <number> in library <work> with parameters.
+	std_1_v = "0011111010"
+	std_1_h = "0110000001"
+	std_2_h = "0110011010"
+	std_2_v = "0011111010"
+	std_3_h = "0110110011"
+	std_3_v = "0011111010"
+	std_4_h = "0111001100"
+	std_4_v = "0011111010"
+	std_high_1_h = "0110000001"
+	std_high_1_v = "0011001000"
+	std_high_2_h = "0110011010"
+	std_high_2_v = "0011001000"
+	std_high_3_h = "0110110011"
+	std_high_3_v = "0011001000"
+	std_high_4_h = "0111001100"
+	std_high_4_v = "0011001000"
+
+Analyzing hierarchy for module <Bird_show> in library <work> with parameters.
+	bird_length = "11111"
+	bird_location_horizontal = "1100100"
+	bird_width = "11111"
+	black = "000000000000000000000000"
+	body_blue = "010001101001111011010111"
+	body_red = "111110000010000100000000"
+	body_yellow = "111110001111001000010010"
+	grey = "111101001111000011110001"
+	lip_orange = "111001101001111000101010"
+	lip_red = "111111100110100101001001"
+	red = "111111100110100101001001"
+	white = "111111111111111111111111"
+
+Analyzing hierarchy for module <Wing_show> in library <work> with parameters.
+	black = "000000000000000000000000"
+	body_yellow = "111110001111001000010010"
+	grey = "111101001111000011110001"
+	red = "111111100110100101001001"
+	white = "111111111111111111111111"
+	wing_length = "11111"
+	wing_location_horizontal = "1100011"
+	wing_width = "11111"
+
+Analyzing hierarchy for module <Peashooter_show> in library <work> with parameters.
+	c0 = "101010101101111000110000"
+	c1 = "100001011100101000011100"
+	c10 = "001001000010010000100100"
+	c11 = "010110011000100100001000"
+	c12 = "011011010111100101010101"
+	c13 = "001100001010010100000100"
+	c14 = "011111011000010101101101"
+	c15 = "010001000100010001000100"
+	c16 = "000110000011000000010000"
+	c17 = "001101000011010000110100"
+	c18 = "011010010111000101001000"
+	c19 = "000001000001010000000000"
+	c2 = "010100000101100100101000"
+	c20 = "011000010110000101100001"
+	c21 = "001001001001000100000000"
+	c22 = "010101010101010101010101"
+	c23 = "011100011010101000001000"
+	c24 = "010110010110010100110000"
+	c25 = "100111011010000110011001"
+	c26 = "001111001101101000001100"
+	c27 = "000101000010000000001100"
+	c28 = "001101001011011000001000"
+	c29 = "000001000010010000000000"
+	c3 = "000110000101010100000100"
+	c30 = "010100000110000100001000"
+	c31 = "111111111111111111111111"
+	c4 = "011111010111100101111001"
+	c5 = "000000000000010000000000"
+	c6 = "000100000001000000001100"
+	c7 = "010100000101100100111000"
+	c8 = "001110001100001000001000"
+	c9 = "110011101101001011000110"
+	cloud_height = "000101100"
+	cloud_width = "001010000"
+	dark_yellow = "110101101001011000100001"
+	light_yellow = "111111111101101110000101"
+	peashooter_body_height = "001010100"
+	peashooter_body_width = "001011000"
+
+Analyzing hierarchy for module <Peas_show> in library <work> with parameters.
+	white = "111111111111111111111111"
+	red = "111111110000000000000000"
+	peas_body_width = "1111"
+	peas_body_height = "1111"
+	green = "000000001111111100000000"
+	black = "000000000000000000000000"
+
+Analyzing hierarchy for module <brick> in library <work>.
+
+Analyzing hierarchy for module <Life_show> in library <work> with parameters.
+	white = "111111111111111111111111"
+	red = "111111100110100101001001"
+	grey = "111101001111000011110001"
+	life_length = "10000"
+	life_width = "10000"
+	life_store_start = "0000000000"
+	body_yellow = "111110001111001000010010"
+	black = "000000000000000000000000"
+
+Analyzing hierarchy for module <Intro_show> in library <work> with parameters.
+	score_intro_width = "0000110001"
+	score_intro_height = "0000001111"
+	light_orange = "111111001010000001001000"
+	light_green = "010110001101100001011000"
+	intro_width = "0011000110"
+	intro_height = "0000110110"
+	dark_orange = "111001000110000000011000"
+	dark_green = "000000001010100001001000"
+	black = "000000000000000000000000"
+	score_intro_x = "0110100101"
+	score_intro_y_best = "0011100011"
+	score_intro_y_score = "0100010101"
+	white = "111111111111111111111111"
+
+Building hierarchy successfully finished.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <clk_div> in library <work>.
+Module <clk_div> is correct for synthesis.
+ 
+Analyzing module <ps2_ctlr> in library <work>.
+	LEFT = 32'sb00000000000000000000000000000000
+	RIGHT = 32'sb00000000000000000000000000000001
+	UP = 32'sb00000000000000000000000000000010
+	DOWN = 32'sb00000000000000000000000000000011
+	CHOOSE1 = 32'sb00000000000000000000000000000100
+	CHOOSE2 = 32'sb00000000000000000000000000000101
+	UP2 = 32'sb00000000000000000000000000000111
+	ENTER = 32'sb00000000000000000000000000001011
+	INVALID = 32'sb00000000000000000000000000001101
+Module <ps2_ctlr> is correct for synthesis.
+ 
+Analyzing module <ps2_kbd_driver> in library <work>.
+Module <ps2_kbd_driver> is correct for synthesis.
+ 
+Analyzing module <control> in library <work>.
+	WELCOME = 32'sb00000000000000000000000000000000
+	INITIAL_GAME = 32'sb00000000000000000000000000000001
+	NORMAL_MODE = 32'sb00000000000000000000000000000010
+	CHEAT_MODE = 32'sb00000000000000000000000000000011
+	DEAD = 32'sb00000000000000000000000000000100
+	UP_PILLAR_BOTTOM = 9'b011001000
+	MODE_NORMAL = 32'sb00000000000000000000000000000000
+	MODE_MOVE = 32'sb00000000000000000000000000000001
+	BIRD_UP_MAX = 32'sb00000000000000000000000111100000
+	BIRD_DOWN_MAX = 32'sb00000000000000000000000000101000
+	ADD_SCORE_POINT = 9'b001100100
+WARNING:Xst:905 - "control.v" line 424: The signals <random_256_2, random_256_1> are missing in the sensitivity list of always block.
+Module <control> is correct for synthesis.
+ 
+Analyzing module <random_256_gen> in library <work>.
+Module <random_256_gen> is correct for synthesis.
+ 
+Analyzing module <bird_info_gen> in library <work>.
+Module <bird_info_gen> is correct for synthesis.
+ 
+Analyzing module <vga_show> in library <work>.
+WARNING:Xst:852 - "vga_show.v" line 158: Unconnected input port 'valid_array' of instance 'back' is tied to GND.
+Module <vga_show> is correct for synthesis.
+ 
+Analyzing module <VGA> in library <work>.
+	H_PIXELS = 32'sb00000000000000000000001100100000
+	V_LINES = 32'sb00000000000000000000001000001001
+	H_ACTIVE_REGION = 32'sb00000000000000000000001010000000
+	V_ACTIVE_REGION = 32'sb00000000000000000000000111100000
+	H_FRONT_PORCH = 32'sb00000000000000000000000000010000
+	H_BACK_PORCH = 32'sb00000000000000000000000000110000
+	V_FRONT_PORCH = 32'sb00000000000000000000000000001010
+	V_BACK_PORCH = 32'sb00000000000000000000000000011101
+	H_SYSC_PERIOD = 32'sb00000000000000000000000001100000
+	V_SYSC_PERIOD = 32'sb00000000000000000000000000000010
+Module <VGA> is correct for synthesis.
+ 
+Analyzing module <back> in library <work>.
+WARNING:Xst:2211 - "bgd.v" line 90: Instantiating black box module <bgd>.
+Module <back> is correct for synthesis.
+ 
+Analyzing module <pipe> in library <work>.
+	pipe_width = 10'b0000110100
+	pipe_retract = 10'b0000000010
+	head_width = 10'b0000010100
+	stripe_height = 10'b0000010100
+	blank_height = 10'b0000011110
+	color_1 = 24'b110100101110110001111101
+	color_2 = 24'b110110011111001110000011
+	color_3 = 24'b110111111111100010000111
+	color_4 = 24'b111001001111110110001011
+	color_5 = 24'b110111111111100010000111
+	color_6 = 24'b110110011111010010000010
+	color_7 = 24'b110100011110110001111101
+	color_8 = 24'b110010011110011001110111
+	color_9 = 24'b110000001101111001110000
+	color_10 = 24'b101101111101010101101010
+	color_11 = 24'b101011001100110001100010
+	color_12 = 24'b101000101100001101011010
+	color_13 = 24'b100110001011101001010011
+	color_14 = 24'b100011011011000001001011
+	color_15 = 24'b100000111010100001000100
+	color_16 = 24'b011110011010000000111100
+	color_17 = 24'b011100001001011100110101
+	color_18 = 24'b011010001001000000110000
+	color_19 = 24'b011000011000101000101010
+	color_20 = 24'b010110101000010000100101
+	color_21 = 24'b010101011000000000100010
+WARNING:Xst:905 - "pipe.v" line 97: The signals <gap_width, stripe_valid> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - "pipe.v" line 126: The signals <gap_width> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - "pipe.v" line 219: The signals <gap_width> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - "pipe.v" line 232: The signals <gap_width> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - "pipe.v" line 275: The signals <gap_width> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - "pipe.v" line 290: The signals <gap_width> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - "pipe.v" line 306: The signals <stripe_valid, position_stripe> are missing in the sensitivity list of always block.
+WARNING:Xst:905 - "pipe.v" line 333: The signals <state_1, state_3, gap_width, state_2, state_4, state_5, state_7, state_6, state_8> are missing in the sensitivity list of always block.
+Module <pipe> is correct for synthesis.
+ 
+Analyzing module <number> in library <work>.
+	std_1_h = 10'b0110000001
+	std_1_v = 10'b0011111010
+	std_2_h = 10'b0110011010
+	std_2_v = 10'b0011111010
+	std_3_h = 10'b0110110011
+	std_3_v = 10'b0011111010
+	std_4_h = 10'b0111001100
+	std_4_v = 10'b0011111010
+	std_high_1_h = 10'b0110000001
+	std_high_1_v = 10'b0011001000
+	std_high_2_h = 10'b0110011010
+	std_high_2_v = 10'b0011001000
+	std_high_3_h = 10'b0110110011
+	std_high_3_v = 10'b0011001000
+	std_high_4_h = 10'b0111001100
+	std_high_4_v = 10'b0011001000
+WARNING:Xst:905 - "number.v" line 307: The signals <state_1, state_2, state_3, state_4, state_5, state_6, state_7, state_8> are missing in the sensitivity list of always block.
+WARNING:Xst:2211 - "num_rom.v" line 107: Instantiating black box module <num_rom>.
+WARNING:Xst:2211 - "num_rom.v" line 112: Instantiating black box module <num_rom>.
+WARNING:Xst:2211 - "num_rom.v" line 117: Instantiating black box module <num_rom>.
+WARNING:Xst:2211 - "num_rom.v" line 122: Instantiating black box module <num_rom>.
+WARNING:Xst:2211 - "num_rom.v" line 127: Instantiating black box module <num_rom>.
+WARNING:Xst:2211 - "num_rom.v" line 132: Instantiating black box module <num_rom>.
+WARNING:Xst:2211 - "num_rom.v" line 138: Instantiating black box module <num_rom>.
+WARNING:Xst:2211 - "num_rom.v" line 144: Instantiating black box module <num_rom>.
+Module <number> is correct for synthesis.
+ 
+Analyzing module <Bird_show> in library <work>.
+	bird_length = 5'b11111
+	bird_width = 5'b11111
+	bird_location_horizontal = 7'b1100100
+	black = 24'b000000000000000000000000
+	white = 24'b111111111111111111111111
+	red = 24'b111111100110100101001001
+	grey = 24'b111101001111000011110001
+	body_yellow = 24'b111110001111001000010010
+	body_red = 24'b111110000010000100000000
+	body_blue = 24'b010001101001111011010111
+	lip_red = 24'b111111100110100101001001
+	lip_orange = 24'b111001101001111000101010
+WARNING:Xst:905 - "Bird_show.v" line 114: The signals <body_color, lip_color> are missing in the sensitivity list of always block.
+WARNING:Xst:2211 - "bird_rom.v" line 82: Instantiating black box module <bird_rom>.
+Module <Bird_show> is correct for synthesis.
+ 
+Analyzing module <Wing_show> in library <work>.
+	wing_length = 5'b11111
+	wing_width = 5'b11111
+	wing_location_horizontal = 7'b1100011
+	black = 24'b000000000000000000000000
+	white = 24'b111111111111111111111111
+	red = 24'b111111100110100101001001
+	grey = 24'b111101001111000011110001
+	body_yellow = 24'b111110001111001000010010
+WARNING:Xst:905 - "Wing_show.v" line 119: The signals <wing_color, wing_color_select> are missing in the sensitivity list of always block.
+WARNING:Xst:2211 - "wing_rom.v" line 81: Instantiating black box module <wing_rom>.
+Module <Wing_show> is correct for synthesis.
+ 
+Analyzing module <Peashooter_show> in library <work>.
+	peashooter_body_height = 9'b001010100
+	peashooter_body_width = 9'b001011000
+	cloud_height = 9'b000101100
+	cloud_width = 9'b001010000
+	dark_yellow = 24'b110101101001011000100001
+	light_yellow = 24'b111111111101101110000101
+	c0 = 24'b101010101101111000110000
+	c1 = 24'b100001011100101000011100
+	c2 = 24'b010100000101100100101000
+	c3 = 24'b000110000101010100000100
+	c4 = 24'b011111010111100101111001
+	c5 = 24'b000000000000010000000000
+	c6 = 24'b000100000001000000001100
+	c7 = 24'b010100000101100100111000
+	c8 = 24'b001110001100001000001000
+	c9 = 24'b110011101101001011000110
+	c10 = 24'b001001000010010000100100
+	c11 = 24'b010110011000100100001000
+	c12 = 24'b011011010111100101010101
+	c13 = 24'b001100001010010100000100
+	c14 = 24'b011111011000010101101101
+	c15 = 24'b010001000100010001000100
+	c16 = 24'b000110000011000000010000
+	c17 = 24'b001101000011010000110100
+	c18 = 24'b011010010111000101001000
+	c19 = 24'b000001000001010000000000
+	c20 = 24'b011000010110000101100001
+	c21 = 24'b001001001001000100000000
+	c22 = 24'b010101010101010101010101
+	c23 = 24'b011100011010101000001000
+	c24 = 24'b010110010110010100110000
+	c25 = 24'b100111011010000110011001
+	c26 = 24'b001111001101101000001100
+	c27 = 24'b000101000010000000001100
+	c28 = 24'b001101001011011000001000
+	c29 = 24'b000001000010010000000000
+	c30 = 24'b010100000110000100001000
+	c31 = 24'b111111111111111111111111
+WARNING:Xst:2211 - "peashooter_rom_0.v" line 146: Instantiating black box module <peashooter_rom_0>.
+WARNING:Xst:2211 - "peashooter_rom_1.v" line 151: Instantiating black box module <peashooter_rom_1>.
+WARNING:Xst:2211 - "peashooter_rom_2.v" line 156: Instantiating black box module <peashooter_rom_2>.
+WARNING:Xst:2211 - "cloud_rom.v" line 163: Instantiating black box module <cloud_rom>.
+Module <Peashooter_show> is correct for synthesis.
+ 
+Analyzing module <Peas_show> in library <work>.
+	peas_body_height = 4'b1111
+	peas_body_width = 4'b1111
+	white = 24'b111111111111111111111111
+	black = 24'b000000000000000000000000
+	green = 24'b000000001111111100000000
+	red = 24'b111111110000000000000000
+WARNING:Xst:2211 - "peas_rom.v" line 90: Instantiating black box module <peas_rom>.
+Module <Peas_show> is correct for synthesis.
+ 
+Analyzing module <brick> in library <work>.
+WARNING:Xst:2211 - "brick_rom.v" line 30: Instantiating black box module <brick_rom>.
+Module <brick> is correct for synthesis.
+ 
+Analyzing module <Life_show> in library <work>.
+	life_length = 5'b10000
+	life_width = 5'b10000
+	life_store_start = 10'b0000000000
+	black = 24'b000000000000000000000000
+	white = 24'b111111111111111111111111
+	red = 24'b111111100110100101001001
+	grey = 24'b111101001111000011110001
+	body_yellow = 24'b111110001111001000010010
+WARNING:Xst:2211 - "life_rom.v" line 64: Instantiating black box module <life_rom>.
+Module <Life_show> is correct for synthesis.
+ 
+Analyzing module <Intro_show> in library <work>.
+	intro_height = 10'b0000110110
+	intro_width = 10'b0011000110
+	score_intro_height = 10'b0000001111
+	score_intro_width = 10'b0000110001
+	score_intro_x = 10'b0110100101
+	score_intro_y_score = 10'b0100010101
+	score_intro_y_best = 10'b0011100011
+	black = 24'b000000000000000000000000
+	white = 24'b111111111111111111111111
+	light_green = 24'b010110001101100001011000
+	dark_green = 24'b000000001010100001001000
+	light_orange = 24'b111111001010000001001000
+	dark_orange = 24'b111001000110000000011000
+WARNING:Xst:2211 - "intro_rom.v" line 119: Instantiating black box module <intro_rom>.
+WARNING:Xst:2211 - "score_intro_rom.v" line 124: Instantiating black box module <score_intro_rom>.
+Module <Intro_show> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_div>.
+    Related source file is "clk_div.v".
+    Found 1-bit register for signal <clk_2hz>.
+    Found 1-bit register for signal <clk_25mhz>.
+    Found 1-bit register for signal <clk_60hz>.
+    Found 1-bit register for signal <clk_400hz>.
+    Found 21-bit up counter for signal <counter1>.
+    Found 1-bit register for signal <counter2>.
+    Found 26-bit up counter for signal <counter3>.
+    Found 17-bit up counter for signal <counter4>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred   5 D-type flip-flop(s).
+Unit <clk_div> synthesized.
+
+
+Synthesizing Unit <ps2_kbd_driver>.
+    Related source file is "ps2_kbd_driver.v".
+    Found 16-bit register for signal <keyword>.
+    Found 1-bit xor9 for signal <$xor0000> created at line 54.
+    Found 4-bit up counter for signal <count>.
+    Found 10-bit register for signal <temp_shift>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <ps2_kbd_driver> synthesized.
+
+
+Synthesizing Unit <random_256_gen>.
+    Related source file is "random_256_gen.v".
+    Found 1-bit xor2 for signal <$xor0000> created at line 33.
+    Found 1-bit xor2 for signal <$xor0001> created at line 33.
+    Found 12-bit register for signal <random>.
+Unit <random_256_gen> synthesized.
+
+
+Synthesizing Unit <bird_info_gen>.
+    Related source file is "bird_info_gen.v".
+    Found 128x13-bit ROM for signal <$mux0000>.
+    Found 13-bit comparator greater for signal <$cmp_gt0000> created at line 186.
+    Found 13-bit comparator lessequal for signal <$cmp_le0000> created at line 166.
+    Found 13-bit comparator lessequal for signal <$cmp_le0001> created at line 168.
+    Found 13-bit comparator lessequal for signal <$cmp_le0002> created at line 170.
+    Found 13-bit comparator lessequal for signal <$cmp_le0003> created at line 172.
+    Found 13-bit comparator lessequal for signal <$cmp_le0004> created at line 174.
+    Found 13-bit comparator lessequal for signal <$cmp_le0005> created at line 176.
+    Found 13-bit comparator lessequal for signal <$cmp_le0006> created at line 178.
+    Found 13-bit comparator lessequal for signal <$cmp_le0007> created at line 180.
+    Found 13-bit comparator lessequal for signal <$cmp_le0008> created at line 182.
+    Found 13-bit comparator lessequal for signal <$cmp_le0009> created at line 184.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  11 Comparator(s).
+Unit <bird_info_gen> synthesized.
+
+
+Synthesizing Unit <VGA>.
+    Related source file is "VGA.v".
+    Found 1-bit register for signal <V_Enable_Write>.
+    Found 1-bit register for signal <H_Enable_Write>.
+    Found 1-bit register for signal <H_Sysc>.
+    Found 10-bit up counter for signal <V_Line_Count>.
+    Found 10-bit up counter for signal <H_Pixel_Count>.
+    Found 1-bit register for signal <V_Sysc>.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0000> created at line 75.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0001> created at line 76.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0002> created at line 94.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0003> created at line 96.
+    Found 10-bit comparator less for signal <$cmp_lt0000> created at line 94.
+    Found 10-bit comparator less for signal <$cmp_lt0001> created at line 96.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <VGA> synthesized.
+
+
+Synthesizing Unit <pipe>.
+    Related source file is "pipe.v".
+WARNING:Xst:646 - Signal <stripe_b> is assigned but never used.
+WARNING:Xst:737 - Found 1-bit latch for signal <stripe_color_mux>.
+    Found 24-bit register for signal <color_out>.
+    Found 1-bit register for signal <valid_out>.
+    Found 13-bit adder for signal <$add0006> created at line 371.
+    Found 13-bit adder for signal <$add0007> created at line 371.
+    Found 13-bit adder for signal <$add0008> created at line 441.
+    Found 13-bit adder for signal <$add0009> created at line 441.
+    Found 10-bit adder for signal <$add0010> created at line 477.
+    Found 10-bit adder for signal <$add0011> created at line 477.
+    Found 10-bit adder for signal <$add0012> created at line 545.
+    Found 10-bit adder for signal <$add0013> created at line 545.
+    Found 10-bit adder for signal <$add0015> created at line 477.
+    Found 10-bit adder for signal <$add0021> created at line 140.
+    Found 10-bit adder for signal <$add0024> created at line 136.
+    Found 10-bit adder for signal <$addsub0000> created at line 101.
+    Found 10-bit adder for signal <$addsub0001> created at line 290.
+    Found 9-bit subtractor for signal <$addsub0002> created at line 308.
+    Found 10-bit adder for signal <$addsub0003> created at line 477.
+    Found 10-bit adder for signal <$addsub0004> created at line 477.
+    Found 10-bit adder for signal <$addsub0005> created at line 545.
+    Found 9-bit adder carry out for signal <$addsub0006> created at line 308.
+    Found 9-bit adder carry out for signal <$addsub0007> created at line 105.
+    Found 9-bit adder carry out for signal <$addsub0008> created at line 107.
+    Found 9-bit adder carry out for signal <$addsub0009> created at line 126.
+    Found 9-bit adder carry out for signal <$addsub0010> created at line 138.
+    Found 9-bit adder carry out for signal <$addsub0011> created at line 162.
+    Found 9-bit adder carry out for signal <$addsub0012> created at line 105.
+    Found 10-bit comparator equal for signal <$cmp_eq0000> created at line 126.
+    Found 9-bit comparator equal for signal <$cmp_eq0001> created at line 130.
+    Found 9-bit comparator equal for signal <$cmp_eq0002> created at line 134.
+    Found 10-bit comparator equal for signal <$cmp_eq0003> created at line 136.
+    Found 10-bit comparator equal for signal <$cmp_eq0004> created at line 138.
+    Found 10-bit comparator equal for signal <$cmp_eq0005> created at line 140.
+    Found 10-bit comparator equal for signal <$cmp_eq0006> created at line 142.
+    Found 11-bit comparator equal for signal <$cmp_eq0007> created at line 146.
+    Found 10-bit comparator equal for signal <$cmp_eq0008> created at line 150.
+    Found 9-bit comparator equal for signal <$cmp_eq0009> created at line 154.
+    Found 9-bit comparator equal for signal <$cmp_eq0010> created at line 158.
+    Found 10-bit comparator equal for signal <$cmp_eq0011> created at line 160.
+    Found 10-bit comparator equal for signal <$cmp_eq0012> created at line 162.
+    Found 10-bit comparator equal for signal <$cmp_eq0013> created at line 164.
+    Found 10-bit comparator equal for signal <$cmp_eq0014> created at line 166.
+    Found 11-bit comparator equal for signal <$cmp_eq0015> created at line 170.
+    Found 12-bit comparator equal for signal <$cmp_eq0018> created at line 336.
+    Found 12-bit comparator equal for signal <$cmp_eq0019> created at line 336.
+    Found 13-bit comparator equal for signal <$cmp_eq0046> created at line 371.
+    Found 13-bit comparator equal for signal <$cmp_eq0047> created at line 371.
+    Found 12-bit comparator equal for signal <$cmp_eq0048> created at line 406.
+    Found 12-bit comparator equal for signal <$cmp_eq0049> created at line 406.
+    Found 13-bit comparator equal for signal <$cmp_eq0076> created at line 441.
+    Found 13-bit comparator equal for signal <$cmp_eq0077> created at line 441.
+    Found 10-bit comparator equal for signal <$cmp_eq0078> created at line 477.
+    Found 10-bit comparator equal for signal <$cmp_eq0079> created at line 477.
+    Found 13-bit comparator equal for signal <$cmp_eq0104> created at line 510.
+    Found 13-bit comparator equal for signal <$cmp_eq0105> created at line 510.
+    Found 10-bit comparator equal for signal <$cmp_eq0106> created at line 545.
+    Found 10-bit comparator equal for signal <$cmp_eq0107> created at line 545.
+    Found 13-bit comparator equal for signal <$cmp_eq0132> created at line 579.
+    Found 13-bit comparator equal for signal <$cmp_eq0133> created at line 579.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0000> created at line 97.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0001> created at line 97.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0002> created at line 99.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0003> created at line 99.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0004> created at line 101.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0005> created at line 103.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0006> created at line 105.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0007> created at line 105.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0008> created at line 107.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0009> created at line 107.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0010> created at line 109.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0011> created at line 128.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0012> created at line 134.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0013> created at line 142.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0014> created at line 152.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0015> created at line 158.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0016> created at line 166.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0017> created at line 336.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0018> created at line 406.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0019> created at line 477.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0020> created at line 545.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0021> created at line 319.
+    Found 9-bit comparator greater for signal <$cmp_gt0000> created at line 275.
+    Found 9-bit comparator lessequal for signal <$cmp_le0000> created at line 97.
+    Found 10-bit comparator lessequal for signal <$cmp_le0001> created at line 97.
+    Found 9-bit comparator lessequal for signal <$cmp_le0002> created at line 99.
+    Found 10-bit comparator lessequal for signal <$cmp_le0003> created at line 99.
+    Found 10-bit comparator lessequal for signal <$cmp_le0004> created at line 101.
+    Found 10-bit comparator lessequal for signal <$cmp_le0005> created at line 103.
+    Found 10-bit comparator lessequal for signal <$cmp_le0006> created at line 105.
+    Found 10-bit comparator lessequal for signal <$cmp_le0007> created at line 107.
+    Found 10-bit comparator lessequal for signal <$cmp_le0008> created at line 109.
+    Found 10-bit comparator lessequal for signal <$cmp_le0009> created at line 111.
+    Found 10-bit comparator lessequal for signal <$cmp_le0010> created at line 126.
+    Found 10-bit comparator lessequal for signal <$cmp_le0011> created at line 128.
+    Found 12-bit comparator lessequal for signal <$cmp_le0012> created at line 144.
+    Found 10-bit comparator lessequal for signal <$cmp_le0013> created at line 150.
+    Found 10-bit comparator lessequal for signal <$cmp_le0014> created at line 152.
+    Found 12-bit comparator lessequal for signal <$cmp_le0015> created at line 168.
+    Found 10-bit comparator lessequal for signal <$cmp_le0016> created at line 477.
+    Found 10-bit comparator lessequal for signal <$cmp_le0017> created at line 545.
+    Found 9-bit comparator lessequal for signal <$cmp_le0018> created at line 319.
+    Found 10-bit comparator lessequal for signal <$cmp_le0019> created at line 275.
+    Found 10-bit comparator lessequal for signal <$cmp_le0020> created at line 290.
+    Found 9-bit subtractor for signal <$old_stripe_b_12>.
+    Found 11-bit subtractor for signal <$sub0000> created at line 144.
+    Found 12-bit subtractor for signal <$sub0001> created at line 144.
+    Found 11-bit subtractor for signal <$sub0003> created at line 168.
+    Found 12-bit subtractor for signal <$sub0004> created at line 168.
+    Found 12-bit subtractor for signal <$sub0006> created at line 336.
+    Found 12-bit subtractor for signal <$sub0007> created at line 336.
+    Found 12-bit subtractor for signal <$sub0008> created at line 406.
+    Found 12-bit subtractor for signal <$sub0009> created at line 406.
+    Found 13-bit subtractor for signal <$sub0010> created at line 510.
+    Found 13-bit subtractor for signal <$sub0011> created at line 510.
+    Found 13-bit subtractor for signal <$sub0012> created at line 510.
+    Found 13-bit subtractor for signal <$sub0013> created at line 579.
+    Found 13-bit subtractor for signal <$sub0014> created at line 579.
+    Found 13-bit subtractor for signal <$sub0015> created at line 579.
+    Found 11-bit subtractor for signal <$sub0016> created at line 318.
+    Found 10-bit subtractor for signal <$sub0017> created at line 317.
+    Found 11-bit subtractor for signal <$sub0018> created at line 316.
+    Found 10-bit subtractor for signal <$sub0019> created at line 315.
+    Found 11-bit subtractor for signal <$sub0020> created at line 318.
+    Found 11-bit subtractor for signal <$sub0021> created at line 316.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred  45 Adder/Subtractor(s).
+	inferred  76 Comparator(s).
+Unit <pipe> synthesized.
+
+
+Synthesizing Unit <ps2_ctlr>.
+    Related source file is "ps2_ctlr.v".
+    Found 4-bit 4-to-1 multiplexer for signal <control_key>.
+    Found 16-bit register for signal <ps2_data_syn1>.
+    Found 16-bit register for signal <ps2_data_syn2>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <ps2_ctlr> synthesized.
+
+
+Synthesizing Unit <control>.
+    Related source file is "control.v".
+WARNING:Xst:647 - Input <right> is never used.
+WARNING:Xst:647 - Input <left> is never used.
+WARNING:Xst:1305 - Output <shooter_valid> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <down> is never used.
+WARNING:Xst:646 - Signal <random_256_2<6:3>> is assigned but never used.
+    Using one-hot encoding for signal <game_mode>.
+    Using one-hot encoding for signal <pillar_move_0>.
+    Using one-hot encoding for signal <pillar_move_1>.
+    Found 4x1-bit ROM for signal <$mux0004>.
+    Found 4x1-bit ROM for signal <$mux0005>.
+    Found 4x1-bit ROM for signal <$mux0007>.
+    Found 3-bit register for signal <peas_type>.
+    Found 9-bit 4-to-1 multiplexer for signal <pillar_v_1_sum>.
+    Found 9-bit 4-to-1 multiplexer for signal <position_stripe_sum>.
+    Found 10-bit updown counter for signal <shooter_y>.
+    Found 10-bit register for signal <gap_width>.
+    Found 1-bit register for signal <intro_valid>.
+    Found 10-bit register for signal <intro_height>.
+    Found 1-bit register for signal <intro_type>.
+    Found 9-bit 4-to-1 multiplexer for signal <pillar_h_0_sum>.
+    Found 1-bit register for signal <bird_valid>.
+    Found 10-bit register for signal <peas_x>.
+    Found 10-bit register for signal <peas_y>.
+    Found 9-bit 4-to-1 multiplexer for signal <pillar_h_1_sum>.
+    Found 1-bit register for signal <pillar_valid_0>.
+    Found 1-bit register for signal <pillar_valid_1>.
+    Found 9-bit 4-to-1 multiplexer for signal <pillar_v_0_sum>.
+    Found 4-bit register for signal <life>.
+    Found 1-bit register for signal <flash>.
+    Found 2-bit register for signal <bird_color_select>.
+    Found 13-bit 4-to-1 multiplexer for signal <bird_height>.
+    Found 1-bit register for signal <peas_valid>.
+    Found 14-bit adder for signal <$add0000> created at line 494.
+    Found 10-bit adder for signal <$add0001> created at line 666.
+    Found 9-bit addsub for signal <$addsub0000>.
+    Found 9-bit addsub for signal <$addsub0001>.
+    Found 9-bit addsub for signal <$addsub0002>.
+    Found 9-bit addsub for signal <$addsub0003>.
+    Found 9-bit addsub for signal <$addsub0004>.
+    Found 13-bit adder for signal <$addsub0005> created at line 499.
+    Found 11-bit adder for signal <$addsub0006> created at line 174.
+    Found 4-bit addsub for signal <$addsub0007>.
+    Found 10-bit adder for signal <$addsub0008> created at line 214.
+    Found 9-bit subtractor for signal <$addsub0009> created at line 357.
+    Found 9-bit subtractor for signal <$addsub0010> created at line 369.
+    Found 9-bit addsub for signal <$addsub0011>.
+    Found 9-bit addsub for signal <$addsub0012>.
+    Found 9-bit subtractor for signal <$addsub0013> created at line 409.
+    Found 10-bit adder for signal <$addsub0014> created at line 484.
+    Found 10-bit adder for signal <$addsub0015> created at line 509.
+    Found 4-bit adder for signal <$addsub0016> created at line 547.
+    Found 4-bit adder for signal <$addsub0017> created at line 559.
+    Found 4-bit adder for signal <$addsub0018> created at line 571.
+    Found 4-bit adder for signal <$addsub0019> created at line 583.
+    Found 10-bit subtractor for signal <$addsub0020> created at line 659.
+    Found 10-bit adder for signal <$addsub0021> created at line 323.
+    Found 8-bit adder carry out for signal <$addsub0022> created at line 378.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0000> created at line 325.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0001> created at line 339.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0002> created at line 633.
+    Found 15-bit comparator greater for signal <$cmp_gt0000> created at line 494.
+    Found 16-bit comparator greater for signal <$cmp_gt0001> created at line 590.
+    Found 9-bit comparator greater for signal <$cmp_gt0002> created at line 287.
+    Found 9-bit comparator greater for signal <$cmp_gt0003> created at line 289.
+    Found 9-bit comparator greater for signal <$cmp_gt0004> created at line 291.
+    Found 9-bit comparator greater for signal <$cmp_gt0005> created at line 297.
+    Found 9-bit comparator greater for signal <$cmp_gt0006> created at line 299.
+    Found 9-bit comparator greater for signal <$cmp_gt0007> created at line 301.
+    Found 9-bit comparator greater for signal <$cmp_gt0008> created at line 536.
+    Found 9-bit comparator greater for signal <$cmp_gt0009> created at line 536.
+    Found 11-bit comparator greater for signal <$cmp_gt0010> created at line 173.
+    Found 10-bit comparator greater for signal <$cmp_gt0011> created at line 656.
+    Found 11-bit comparator lessequal for signal <$cmp_le0000> created at line 214.
+    Found 4-bit comparator lessequal for signal <$cmp_le0001> created at line 542.
+    Found 9-bit comparator lessequal for signal <$cmp_le0002> created at line 287.
+    Found 9-bit comparator lessequal for signal <$cmp_le0003> created at line 289.
+    Found 9-bit comparator lessequal for signal <$cmp_le0004> created at line 297.
+    Found 9-bit comparator lessequal for signal <$cmp_le0005> created at line 299.
+    Found 9-bit comparator lessequal for signal <$cmp_le0006> created at line 536.
+    Found 9-bit comparator lessequal for signal <$cmp_le0007> created at line 536.
+    Found 10-bit comparator lessequal for signal <$cmp_le0008> created at line 323.
+    Found 10-bit comparator lessequal for signal <$cmp_le0009> created at line 337.
+    Found 3-bit comparator lessequal for signal <$cmp_le0010> created at line 546.
+    Found 10-bit comparator lessequal for signal <$cmp_le0011> created at line 631.
+    Found 11-bit comparator less for signal <$cmp_lt0000> created at line 432.
+    Found 15-bit comparator less for signal <$cmp_lt0001> created at line 496.
+    Found 9-bit comparator less for signal <$cmp_lt0002> created at line 291.
+    Found 9-bit comparator less for signal <$cmp_lt0003> created at line 301.
+    Found 10-bit comparator less for signal <$cmp_lt0004> created at line 483.
+    Found 11-bit comparator less for signal <$cmp_lt0005> created at line 179.
+    Found 10-bit 4-to-1 multiplexer for signal <$mux0006>.
+    Found 9-bit 4-to-1 multiplexer for signal <$mux0013>.
+    Found 9-bit 4-to-1 multiplexer for signal <$mux0014>.
+    Found 9-bit 4-to-1 multiplexer for signal <$mux0015>.
+    Found 9-bit 4-to-1 multiplexer for signal <$mux0016>.
+    Found 9-bit 4-to-1 multiplexer for signal <$mux0017>.
+    Found 1-bit 4-to-1 multiplexer for signal <$mux0018>.
+    Found 10-bit 4-to-1 multiplexer for signal <$mux0020>.
+    Found 10-bit 4-to-1 multiplexer for signal <$mux0021>.
+    Found 2-bit 4-to-1 multiplexer for signal <$mux0022>.
+    Found 4-bit 4-to-1 multiplexer for signal <$mux0023>.
+    Found 4-bit 4-to-1 multiplexer for signal <$mux0024>.
+    Found 4-bit 4-to-1 multiplexer for signal <$mux0025>.
+    Found 4-bit 4-to-1 multiplexer for signal <$mux0026>.
+    Found 2-bit 4-to-1 multiplexer for signal <$mux0031>.
+    Found 10-bit addsub for signal <$share0006>.
+    Found 10-bit subtractor for signal <$sub0001> created at line 323.
+    Found 2-bit up counter for signal <bird_color_select_real>.
+    Found 13-bit register for signal <bird_tap_height>.
+    Found 10-bit register for signal <bird_tap_time>.
+    Found 11-bit register for signal <dead_counter>.
+    Found 2-bit register for signal <game_mode>.
+    Found 3-bit register for signal <game_state>.
+    Found 4-bit register for signal <high_score_0>.
+    Found 4-bit register for signal <high_score_1>.
+    Found 4-bit register for signal <high_score_2>.
+    Found 4-bit register for signal <high_score_3>.
+    Found 9-bit register for signal <last_pillar_h_0>.
+    Found 9-bit register for signal <last_pillar_h_1>.
+    Found 10-bit register for signal <peas_get_counter>.
+    Found 9-bit register for signal <pillar_h_0>.
+    Found 9-bit register for signal <pillar_h_1>.
+    Found 3-bit register for signal <pillar_move_0>.
+    Found 3-bit register for signal <pillar_move_1>.
+    Found 3-bit register for signal <pillar_speed>.
+    Found 9-bit register for signal <pillar_v_0>.
+    Found 9-bit register for signal <pillar_v_1>.
+    Found 9-bit register for signal <position_stripe>.
+    Found 4-bit register for signal <score_0>.
+    Found 4-bit register for signal <score_1>.
+    Found 4-bit register for signal <score_2>.
+    Found 4-bit register for signal <score_3>.
+    Found 7-bit up counter for signal <shooter_counter>.
+    Found 2-bit register for signal <shooter_move>.
+    Found 7-bit up counter for signal <shooter_state_8x>.
+    Summary:
+	inferred   3 ROM(s).
+	inferred   4 Counter(s).
+	inferred 167 D-type flip-flop(s).
+	inferred  27 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 154 Multiplexer(s).
+Unit <control> synthesized.
+
+
+Synthesizing Unit <back>.
+    Related source file is "back.v".
+WARNING:Xst:647 - Input <valid_array> is never used.
+WARNING:Xst:643 - "back.v" line 77: The result of a 10x8-bit multiplication is partially used. Only the 14 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "back.v" line 79: The result of a 11x9-bit multiplication is partially used. Only the 14 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "back.v" line 81: The result of a 11x9-bit multiplication is partially used. Only the 14 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "back.v" line 83: The result of a 11x9-bit multiplication is partially used. Only the 14 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 24-bit register for signal <background_pixel>.
+    Found 11-bit subtractor for signal <$addsub0000> created at line 79.
+    Found 11-bit subtractor for signal <$addsub0001> created at line 81.
+    Found 11-bit subtractor for signal <$addsub0002> created at line 83.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0000> created at line 62.
+    Found 10-bit comparator lessequal for signal <$cmp_le0000> created at line 65.
+    Found 10-bit comparator lessequal for signal <$cmp_le0001> created at line 76.
+    Found 10-bit comparator greatequal for signal <$cmp_le0002> created at line 78.
+    Found 10-bit comparator lessequal for signal <$cmp_le0003> created at line 78.
+    Found 10-bit comparator greatequal for signal <$cmp_le0004> created at line 80.
+    Found 10-bit comparator lessequal for signal <$cmp_le0005> created at line 80.
+    Found 10-bit comparator greatequal for signal <$cmp_le0006> created at line 82.
+    Found 10-bit comparator lessequal for signal <$cmp_le0007> created at line 82.
+    Found 10x8-bit multiplier for signal <$mult0008> created at line 77.
+    Found 11x9-bit multiplier for signal <$mult0009> created at line 79.
+    Found 11x9-bit multiplier for signal <$mult0010> created at line 81.
+    Found 11x9-bit multiplier for signal <$mult0011> created at line 83.
+    Found 24-bit 4-to-1 multiplexer for signal <$mux0000>.
+    Found 14-bit adder for signal <$share0000>.
+    Found 12-bit adder for signal <$sub0000> created at line 77.
+    Found 14-bit register for signal <addra>.
+    Summary:
+	inferred  38 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 Multiplier(s).
+	inferred   9 Comparator(s).
+	inferred  24 Multiplexer(s).
+Unit <back> synthesized.
+
+
+Synthesizing Unit <number>.
+    Related source file is "number.v".
+WARNING:Xst:647 - Input <rst_n> is never used.
+WARNING:Xst:646 - Signal <add_1<8>> is assigned but never used.
+WARNING:Xst:646 - Signal <add_2<8>> is assigned but never used.
+WARNING:Xst:646 - Signal <add_3<8>> is assigned but never used.
+WARNING:Xst:646 - Signal <add_4<8>> is assigned but never used.
+WARNING:Xst:646 - Signal <add_5<8>> is assigned but never used.
+WARNING:Xst:646 - Signal <add_6<8>> is assigned but never used.
+WARNING:Xst:646 - Signal <add_7<8>> is assigned but never used.
+WARNING:Xst:646 - Signal <add_8<8>> is assigned but never used.
+WARNING:Xst:737 - Found 24-bit latch for signal <color_out>.
+WARNING:Xst:737 - Found 2-bit latch for signal <black_white_select>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 10-bit adder for signal <$addsub0000> created at line 104.
+    Found 10-bit adder for signal <$addsub0001> created at line 100.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0000> created at line 163.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0001> created at line 163.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0002> created at line 179.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0003> created at line 195.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0004> created at line 212.
+    Found 9-bit comparator greatequal for signal <$cmp_ge0005> created at line 229.
+    Found 9-bit comparator lessequal for signal <$cmp_le0000> created at line 163.
+    Found 9-bit comparator lessequal for signal <$cmp_le0001> created at line 163.
+    Found 9-bit comparator lessequal for signal <$cmp_le0002> created at line 179.
+    Found 9-bit comparator lessequal for signal <$cmp_le0003> created at line 195.
+    Found 9-bit comparator lessequal for signal <$cmp_le0004> created at line 212.
+    Found 9-bit comparator lessequal for signal <$cmp_le0005> created at line 229.
+    Found 10x5-bit multiplier for signal <$mult0000> created at line 104.
+    Found 10x5-bit multiplier for signal <$mult0001> created at line 100.
+    Found 11-bit subtractor for signal <$sub0000> created at line 104.
+    Found 11-bit subtractor for signal <$sub0001> created at line 103.
+    Found 11-bit subtractor for signal <$sub0002> created at line 102.
+    Found 11-bit subtractor for signal <$sub0003> created at line 101.
+    Found 9-bit adder for signal <add_1>.
+    Found 9-bit adder for signal <add_2>.
+    Found 9-bit adder for signal <add_3>.
+    Found 9-bit adder for signal <add_4>.
+    Found 9-bit adder for signal <add_5>.
+    Found 9-bit adder for signal <add_6>.
+    Found 9-bit adder for signal <add_7>.
+    Found 9-bit adder for signal <add_8>.
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred  12 Comparator(s).
+Unit <number> synthesized.
+
+
+Synthesizing Unit <Bird_show>.
+    Related source file is "Bird_show.v".
+    Found 4x48-bit ROM for signal <$rom0000>.
+WARNING:Xst:737 - Found 4-bit latch for signal <rom_output_select>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 24-bit register for signal <bird_pixel>.
+    Found 1-bit register for signal <bird_pixel_valid>.
+    Found 10-bit adder for signal <$addsub0000> created at line 80.
+    Found 5-bit adder for signal <$addsub0001> created at line 78.
+    Found 9-bit adder carry out for signal <$addsub0003> created at line 71.
+    Found 10-bit comparator greater for signal <$cmp_gt0000> created at line 71.
+    Found 10-bit comparator greater for signal <$cmp_gt0001> created at line 71.
+    Found 10-bit comparator less for signal <$cmp_lt0000> created at line 71.
+    Found 10-bit comparator less for signal <$cmp_lt0001> created at line 71.
+    Found 4-bit 11-to-1 multiplexer for signal <$mux0002>.
+    Found 5-bit subtractor for signal <column_in_pic>.
+    Found 5-bit subtractor for signal <row_in_pic>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <Bird_show> synthesized.
+
+
+Synthesizing Unit <Wing_show>.
+    Related source file is "Wing_show.v".
+WARNING:Xst:737 - Found 3-bit latch for signal <rom_output_select>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 24-bit register for signal <wing_pixel>.
+    Found 1-bit register for signal <wing_pixel_valid>.
+    Found 10-bit adder for signal <$addsub0000> created at line 79.
+    Found 5-bit adder for signal <$addsub0001> created at line 77.
+    Found 9-bit adder carry out for signal <$addsub0003> created at line 70.
+    Found 10-bit comparator greater for signal <$cmp_gt0000> created at line 70.
+    Found 10-bit comparator greater for signal <$cmp_gt0001> created at line 70.
+    Found 10-bit comparator less for signal <$cmp_lt0000> created at line 70.
+    Found 10-bit comparator less for signal <$cmp_lt0001> created at line 70.
+    Found 3-bit 11-to-1 multiplexer for signal <$mux0002>.
+    Found 3-bit 3-to-1 multiplexer for signal <$mux0003> created at line 89.
+    Found 3-bit 3-to-1 multiplexer for signal <$mux0004> created at line 94.
+    Found 3-bit 3-to-1 multiplexer for signal <$mux0005> created at line 99.
+    Found 5-bit subtractor for signal <column_in_pic>.
+    Found 5-bit subtractor for signal <row_in_pic>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+	inferred  12 Multiplexer(s).
+Unit <Wing_show> synthesized.
+
+
+Synthesizing Unit <Peashooter_show>.
+    Related source file is "Peashooter_show.v".
+WARNING:Xst:1780 - Signal <body_color> is never used or assigned.
+WARNING:Xst:646 - Signal <rom_address_cloud<12>> is assigned but never used.
+WARNING:Xst:643 - "Peashooter_show.v" line 143: The result of a 7x7-bit multiplication is partially used. Only the 13 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "Peashooter_show.v" line 139: The result of a 7x7-bit multiplication is partially used. Only the 13 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 32x24-bit ROM for signal <pixel_output>.
+WARNING:Xst:737 - Found 6-bit latch for signal <rom_output_select>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 24-bit register for signal <peashooter_pixel>.
+    Found 1-bit register for signal <peashooter_pixel_valid>.
+    Found 13-bit adder for signal <$addsub0000> created at line 143.
+    Found 7-bit subtractor for signal <$addsub0001> created at line 141.
+    Found 13-bit adder for signal <$addsub0002> created at line 139.
+    Found 7-bit subtractor for signal <$addsub0003> created at line 137.
+    Found 10-bit adder for signal <$addsub0004> created at line 129.
+    Found 10-bit adder for signal <$addsub0005> created at line 122.
+    Found 10-bit adder carry out for signal <$addsub0006> created at line 141.
+    Found 10-bit adder carry out for signal <$addsub0007> created at line 137.
+    Found 10-bit comparator greater for signal <$cmp_gt0000> created at line 129.
+    Found 13-bit comparator greater for signal <$cmp_gt0001> created at line 129.
+    Found 10-bit comparator greater for signal <$cmp_gt0002> created at line 122.
+    Found 13-bit comparator greater for signal <$cmp_gt0003> created at line 122.
+    Found 10-bit comparator less for signal <$cmp_lt0000> created at line 129.
+    Found 10-bit comparator less for signal <$cmp_lt0001> created at line 129.
+    Found 10-bit comparator less for signal <$cmp_lt0002> created at line 122.
+    Found 10-bit comparator less for signal <$cmp_lt0003> created at line 122.
+    Found 7x7-bit multiplier for signal <$mult0004> created at line 143.
+    Found 7x7-bit multiplier for signal <$mult0005> created at line 139.
+    Found 24-bit 4-to-1 multiplexer for signal <$mux0000>.
+    Found 6-bit 13-to-1 multiplexer for signal <$mux0002>.
+    Found 13-bit subtractor for signal <$sub0000> created at line 129.
+    Found 13-bit subtractor for signal <$sub0001> created at line 122.
+    Found 10-bit adder for signal <cloud_x>.
+    Found 10-bit subtractor for signal <cloud_y>.
+    Found 7-bit subtractor for signal <column_in_pic>.
+    Found 7-bit subtractor for signal <column_in_pic_cloud>.
+    Found 7-bit subtractor for signal <row_in_pic>.
+    Found 7-bit subtractor for signal <row_in_pic_cloud>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  25 D-type flip-flop(s).
+	inferred  16 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred   8 Comparator(s).
+	inferred  30 Multiplexer(s).
+Unit <Peashooter_show> synthesized.
+
+
+Synthesizing Unit <Peas_show>.
+    Related source file is "Peas_show.v".
+    Found 4x24-bit ROM for signal <pixel_output>.
+    Found 1-bit register for signal <peas_pixel_valid>.
+    Found 24-bit register for signal <peas_pixel>.
+    Found 8-bit adder for signal <$addsub0000> created at line 87.
+    Found 4-bit subtractor for signal <$addsub0001> created at line 85.
+    Found 10-bit adder for signal <$addsub0002> created at line 78.
+    Found 10-bit adder carry out for signal <$addsub0003> created at line 85.
+    Found 10-bit comparator greater for signal <$cmp_gt0000> created at line 78.
+    Found 13-bit comparator greater for signal <$cmp_gt0001> created at line 78.
+    Found 10-bit comparator less for signal <$cmp_lt0000> created at line 78.
+    Found 10-bit comparator less for signal <$cmp_lt0001> created at line 78.
+    Found 4x4-bit multiplier for signal <$mult0000> created at line 87.
+    Found 13-bit subtractor for signal <$sub0000> created at line 78.
+    Found 4-bit subtractor for signal <column_in_pic>.
+    Found 3-bit 8-to-1 multiplexer for signal <rom_output_select>.
+    Found 4-bit subtractor for signal <row_in_pic>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   4 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <Peas_show> synthesized.
+
+
+Synthesizing Unit <brick>.
+    Related source file is "brick.v".
+WARNING:Xst:647 - Input <rst_n> is never used.
+WARNING:Xst:647 - Input <v_line<9:6>> is never used.
+WARNING:Xst:646 - Signal <color_select<1>> is assigned but never used.
+WARNING:Xst:646 - Signal <h_line_revised<9:6>> is assigned but never used.
+    Found 10-bit comparator greater for signal <valid_out>.
+    Found 11-bit subtractor for signal <addr>.
+    Found 10-bit subtractor for signal <h_line_revised>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <brick> synthesized.
+
+
+Synthesizing Unit <Life_show>.
+    Related source file is "Life_show.v".
+WARNING:Xst:646 - Signal <row_in_pic<9:6>> is assigned but never used.
+WARNING:Xst:646 - Signal <column_in_pic<9:8>> is assigned but never used.
+WARNING:Xst:737 - Found 24-bit latch for signal <pixel_output>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 24-bit register for signal <life_pixel>.
+    Found 1-bit register for signal <life_pixel_valid>.
+    Found 8-bit adder for signal <$addsub0000> created at line 62.
+    Found 10-bit comparator greater for signal <$cmp_gt0000> created at line 56.
+    Found 10-bit comparator less for signal <$cmp_lt0000> created at line 56.
+    Found 10-bit adder for signal <row_in_pic>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <Life_show> synthesized.
+
+
+Synthesizing Unit <Intro_show>.
+    Related source file is "Intro_show.v".
+WARNING:Xst:643 - "Intro_show.v" line 116: The result of a 10x6-bit multiplication is partially used. Only the 10 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "Intro_show.v" line 110: The result of a 10x8-bit multiplication is partially used. Only the 14 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 6x24-bit ROM for signal <$mux0005>.
+WARNING:Xst:737 - Found 24-bit latch for signal <pixel_output_intro>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit register for signal <score_intro_pixel_valid>.
+    Found 24-bit register for signal <intro_pixel>.
+    Found 1-bit register for signal <intro_pixel_valid>.
+    Found 24-bit register for signal <score_intro_pixel>.
+    Found 10-bit adder for signal <$addsub0000> created at line 116.
+    Found 14-bit adder for signal <$addsub0001> created at line 110.
+    Found 10-bit subtractor for signal <$addsub0002> created at line 108.
+    Found 10-bit adder carry out for signal <$addsub0003> created at line 108.
+    Found 10-bit comparator greatequal for signal <$cmp_ge0000> created at line 138.
+    Found 10-bit comparator greater for signal <$cmp_gt0000> created at line 97.
+    Found 10-bit comparator greater for signal <$cmp_gt0001> created at line 97.
+    Found 10-bit comparator greater for signal <$cmp_gt0002> created at line 97.
+    Found 10-bit comparator greater for signal <$cmp_gt0003> created at line 90.
+    Found 13-bit comparator greater for signal <$cmp_gt0004> created at line 90.
+    Found 10-bit comparator less for signal <$cmp_lt0000> created at line 97.
+    Found 10-bit comparator less for signal <$cmp_lt0001> created at line 97.
+    Found 10-bit comparator less for signal <$cmp_lt0002> created at line 97.
+    Found 10-bit comparator less for signal <$cmp_lt0003> created at line 90.
+    Found 10-bit comparator less for signal <$cmp_lt0004> created at line 90.
+    Found 10x6-bit multiplier for signal <$mult0004> created at line 116.
+    Found 10x8-bit multiplier for signal <$mult0005> created at line 110.
+    Found 13-bit subtractor for signal <$sub0000> created at line 90.
+    Found 10-bit subtractor for signal <column_in_pic_intro>.
+    Found 10-bit subtractor for signal <column_in_pic_score_intro>.
+    Found 10-bit subtractor for signal <row_in_pic_intro>.
+    Found 10-bit adder for signal <row_in_pic_score_intro>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred  11 Comparator(s).
+Unit <Intro_show> synthesized.
+
+
+Synthesizing Unit <vga_show>.
+    Related source file is "vga_show.v".
+WARNING:Xst:647 - Input <clk_2hz> is never used.
+WARNING:Xst:647 - Input <clk> is never used.
+WARNING:Xst:647 - Input <shooter_valid> is never used.
+WARNING:Xst:647 - Input <bird_height<9>> is never used.
+WARNING:Xst:647 - Input <background_select> is never used.
+WARNING:Xst:646 - Signal <xx_last> is assigned but never used.
+WARNING:Xst:646 - Signal <yy_last> is assigned but never used.
+    Found 8-bit register for signal <vga_blue>.
+    Found 19-bit comparator greater for signal <peas_get>.
+    Found 19-bit comparator greater for signal <bird_crash>.
+    Found 8-bit register for signal <vga_red>.
+    Found 8-bit register for signal <vga_green>.
+    Found 19-bit adder for signal <$addsub0000> created at line 380.
+    Found 19-bit adder for signal <$addsub0001> created at line 392.
+    Found 10-bit adder for signal <$AUX_current_print_column_5>.
+    Found 19-bit comparator greater for signal <$cmp_gt0000> created at line 381.
+    Found 19-bit comparator greater for signal <$cmp_gt0001> created at line 393.
+    Found 19-bit comparator lessequal for signal <$cmp_le0000> created at line 379.
+    Found 19-bit comparator lessequal for signal <$cmp_le0001> created at line 391.
+    Found 19-bit 4-to-1 multiplexer for signal <$mux0000>.
+    Found 19-bit 4-to-1 multiplexer for signal <$mux0001>.
+    Found 19-bit register for signal <crash_counter>.
+    Found 19-bit register for signal <peas_get_counter>.
+    Found 10-bit subtractor for signal <x>.
+    Found 10-bit adder for signal <y>.
+    Summary:
+	inferred  62 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  38 Multiplexer(s).
+Unit <vga_show> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+WARNING:Xst:646 - Signal <clk_400hz> is assigned but never used.
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 8
+ 128x13-bit ROM                                        : 1
+ 32x24-bit ROM                                         : 1
+ 4x1-bit ROM                                           : 3
+ 4x24-bit ROM                                          : 1
+ 4x48-bit ROM                                          : 1
+ 6x24-bit ROM                                          : 1
+# Multipliers                                          : 11
+ 10x5-bit multiplier                                   : 2
+ 10x6-bit multiplier                                   : 1
+ 10x8-bit multiplier                                   : 2
+ 11x9-bit multiplier                                   : 3
+ 4x4-bit multiplier                                    : 1
+ 7x7-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 141
+ 10-bit adder                                          : 29
+ 10-bit adder carry out                                : 4
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 11
+ 11-bit adder                                          : 1
+ 11-bit subtractor                                     : 14
+ 12-bit adder                                          : 1
+ 12-bit subtractor                                     : 6
+ 13-bit adder                                          : 7
+ 13-bit subtractor                                     : 10
+ 14-bit adder                                          : 3
+ 19-bit adder                                          : 2
+ 4-bit adder                                           : 4
+ 4-bit addsub                                          : 1
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 4
+ 7-bit subtractor                                      : 6
+ 8-bit adder                                           : 2
+ 8-bit adder carry out                                 : 1
+ 9-bit adder                                           : 8
+ 9-bit adder carry out                                 : 9
+ 9-bit addsub                                          : 7
+ 9-bit subtractor                                      : 5
+# Counters                                             : 10
+ 10-bit up counter                                     : 2
+ 10-bit updown counter                                 : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 7-bit up counter                                      : 2
+# Registers                                            : 77
+ 1-bit register                                        : 24
+ 10-bit register                                       : 7
+ 11-bit register                                       : 1
+ 12-bit register                                       : 2
+ 13-bit register                                       : 1
+ 14-bit register                                       : 1
+ 16-bit register                                       : 3
+ 19-bit register                                       : 2
+ 2-bit register                                        : 3
+ 24-bit register                                       : 9
+ 3-bit register                                        : 5
+ 4-bit register                                        : 9
+ 8-bit register                                        : 3
+ 9-bit register                                        : 7
+# Latches                                              : 8
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 24-bit latch                                          : 3
+ 3-bit latch                                           : 1
+ 4-bit latch                                           : 1
+ 6-bit latch                                           : 1
+# Comparators                                          : 187
+ 10-bit comparator equal                               : 14
+ 10-bit comparator greatequal                          : 28
+ 10-bit comparator greater                             : 14
+ 10-bit comparator less                                : 19
+ 10-bit comparator lessequal                           : 24
+ 11-bit comparator equal                               : 2
+ 11-bit comparator greater                             : 1
+ 11-bit comparator less                                : 2
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator equal                               : 4
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator equal                               : 8
+ 13-bit comparator greater                             : 5
+ 13-bit comparator lessequal                           : 10
+ 15-bit comparator greater                             : 1
+ 15-bit comparator less                                : 1
+ 16-bit comparator greater                             : 1
+ 19-bit comparator greater                             : 4
+ 19-bit comparator lessequal                           : 2
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator lessequal                            : 1
+ 9-bit comparator equal                                : 4
+ 9-bit comparator greatequal                           : 12
+ 9-bit comparator greater                              : 9
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 15
+# Multiplexers                                         : 33
+ 1-bit 4-to-1 multiplexer                              : 1
+ 10-bit 4-to-1 multiplexer                             : 3
+ 13-bit 4-to-1 multiplexer                             : 1
+ 19-bit 4-to-1 multiplexer                             : 2
+ 2-bit 4-to-1 multiplexer                              : 2
+ 24-bit 4-to-1 multiplexer                             : 2
+ 3-bit 11-to-1 multiplexer                             : 1
+ 3-bit 3-to-1 multiplexer                              : 3
+ 3-bit 8-to-1 multiplexer                              : 1
+ 4-bit 11-to-1 multiplexer                             : 1
+ 4-bit 4-to-1 multiplexer                              : 5
+ 6-bit 13-to-1 multiplexer                             : 1
+ 9-bit 4-to-1 multiplexer                              : 10
+# Xors                                                 : 5
+ 1-bit xor2                                            : 4
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx\8.2i.
+Reading core <bgd.ngc>.
+Reading core <num_rom.ngc>.
+Reading core <bird_rom.ngc>.
+Reading core <wing_rom.ngc>.
+Reading core <peashooter_rom_0.ngc>.
+Reading core <peashooter_rom_1.ngc>.
+Reading core <peashooter_rom_2.ngc>.
+Reading core <cloud_rom.ngc>.
+Reading core <peas_rom.ngc>.
+Reading core <brick_rom.ngc>.
+Reading core <life_rom.ngc>.
+Reading core <intro_rom.ngc>.
+Reading core <score_intro_rom.ngc>.
+Loading core <bgd> for timing and area information for instance <bgd>.
+Loading core <num_rom> for timing and area information for instance <num_rom_1>.
+Loading core <num_rom> for timing and area information for instance <num_rom_2>.
+Loading core <num_rom> for timing and area information for instance <num_rom_3>.
+Loading core <num_rom> for timing and area information for instance <num_rom_4>.
+Loading core <num_rom> for timing and area information for instance <num_rom_5>.
+Loading core <num_rom> for timing and area information for instance <num_rom_6>.
+Loading core <num_rom> for timing and area information for instance <num_rom_7>.
+Loading core <num_rom> for timing and area information for instance <num_rom_8>.
+Loading core <bird_rom> for timing and area information for instance <rom_bird_0>.
+Loading core <wing_rom> for timing and area information for instance <wing_rom_0>.
+Loading core <peashooter_rom_0> for timing and area information for instance <rom_peashooter_0>.
+Loading core <peashooter_rom_1> for timing and area information for instance <rom_peashooter_1>.
+Loading core <peashooter_rom_2> for timing and area information for instance <rom_peashooter_2>.
+Loading core <cloud_rom> for timing and area information for instance <rom_cloud>.
+Loading core <peas_rom> for timing and area information for instance <rom_peas>.
+Loading core <brick_rom> for timing and area information for instance <brick_rom1>.
+Loading core <life_rom> for timing and area information for instance <rom_life_0>.
+Loading core <intro_rom> for timing and area information for instance <rom_intro_0>.
+Loading core <score_intro_rom> for timing and area information for instance <rom_score_intro_0>.
+INFO:Xst:2261 - The FF/Latch <wing_pixel_1> in Unit <Wing_show> is equivalent to the following 11 FFs/Latches, which will be removed : <wing_pixel_4> <wing_pixel_9> <wing_pixel_12> <wing_pixel_13> <wing_pixel_14> <wing_pixel_15> <wing_pixel_19> <wing_pixel_20> <wing_pixel_21> <wing_pixel_22> <wing_pixel_23> 
+INFO:Xst:2261 - The FF/Latch <wing_pixel_0> in Unit <Wing_show> is equivalent to the following 11 FFs/Latches, which will be removed : <wing_pixel_2> <wing_pixel_3> <wing_pixel_5> <wing_pixel_6> <wing_pixel_7> <wing_pixel_8> <wing_pixel_10> <wing_pixel_11> <wing_pixel_16> <wing_pixel_17> <wing_pixel_18> 
+INFO:Xst:2261 - The FF/Latch <score_intro_pixel_7> in Unit <Intro_show> is equivalent to the following 2 FFs/Latches, which will be removed : <score_intro_pixel_15> <score_intro_pixel_23> 
+INFO:Xst:2261 - The FF/Latch <score_intro_pixel_0> in Unit <Intro_show> is equivalent to the following 20 FFs/Latches, which will be removed : <score_intro_pixel_1> <score_intro_pixel_2> <score_intro_pixel_3> <score_intro_pixel_4> <score_intro_pixel_5> <score_intro_pixel_6> <score_intro_pixel_8> <score_intro_pixel_9> <score_intro_pixel_10> <score_intro_pixel_11> <score_intro_pixel_12> <score_intro_pixel_13> <score_intro_pixel_14> <score_intro_pixel_16> <score_intro_pixel_17> <score_intro_pixel_18> <score_intro_pixel_19> <score_intro_pixel_20> <score_intro_pixel_21> <score_intro_pixel_22> 
+WARNING:Xst:1291 - FF/Latch <clk_2hz> is unconnected in block <clk_div1>.
+WARNING:Xst:1291 - FF/Latch <clk_400hz> is unconnected in block <clk_div1>.
+WARNING:Xst:1291 - FF/Latch <0> is unconnected in block <game_mode>.
+WARNING:Xst:1291 - FF/Latch <0> is unconnected in block <pillar_move_0>.
+WARNING:Xst:1291 - FF/Latch <0> is unconnected in block <pillar_move_1>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 8
+ 128x13-bit ROM                                        : 1
+ 32x24-bit ROM                                         : 1
+ 4x1-bit ROM                                           : 3
+ 4x24-bit ROM                                          : 1
+ 4x48-bit ROM                                          : 1
+ 6x24-bit ROM                                          : 1
+# Multipliers                                          : 11
+ 10x5-bit multiplier                                   : 2
+ 10x6-bit multiplier                                   : 1
+ 10x8-bit multiplier                                   : 2
+ 11x9-bit multiplier                                   : 3
+ 4x4-bit multiplier                                    : 1
+ 7x7-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 141
+ 10-bit adder                                          : 29
+ 10-bit adder carry out                                : 4
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 11
+ 11-bit adder                                          : 1
+ 11-bit subtractor                                     : 14
+ 12-bit adder                                          : 1
+ 12-bit subtractor                                     : 6
+ 13-bit adder                                          : 7
+ 13-bit subtractor                                     : 10
+ 14-bit adder                                          : 3
+ 19-bit adder                                          : 2
+ 4-bit adder                                           : 4
+ 4-bit addsub                                          : 1
+ 4-bit subtractor                                      : 3
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 4
+ 7-bit subtractor                                      : 6
+ 8-bit adder                                           : 2
+ 8-bit adder carry out                                 : 1
+ 9-bit adder                                           : 8
+ 9-bit adder carry out                                 : 9
+ 9-bit addsub                                          : 7
+ 9-bit subtractor                                      : 5
+# Counters                                             : 10
+ 10-bit up counter                                     : 2
+ 10-bit updown counter                                 : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 7-bit up counter                                      : 2
+# Registers                                            : 546
+ Flip-Flops                                            : 546
+# Latches                                              : 8
+ 1-bit latch                                           : 1
+ 2-bit latch                                           : 1
+ 24-bit latch                                          : 3
+ 3-bit latch                                           : 1
+ 4-bit latch                                           : 1
+ 6-bit latch                                           : 1
+# Comparators                                          : 187
+ 10-bit comparator equal                               : 14
+ 10-bit comparator greatequal                          : 28
+ 10-bit comparator greater                             : 14
+ 10-bit comparator less                                : 19
+ 10-bit comparator lessequal                           : 24
+ 11-bit comparator equal                               : 2
+ 11-bit comparator greater                             : 1
+ 11-bit comparator less                                : 2
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator equal                               : 4
+ 12-bit comparator lessequal                           : 2
+ 13-bit comparator equal                               : 8
+ 13-bit comparator greater                             : 5
+ 13-bit comparator lessequal                           : 10
+ 15-bit comparator greater                             : 1
+ 15-bit comparator less                                : 1
+ 16-bit comparator greater                             : 1
+ 19-bit comparator greater                             : 4
+ 19-bit comparator lessequal                           : 2
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator lessequal                            : 1
+ 9-bit comparator equal                                : 4
+ 9-bit comparator greatequal                           : 12
+ 9-bit comparator greater                              : 9
+ 9-bit comparator less                                 : 2
+ 9-bit comparator lessequal                            : 15
+# Multiplexers                                         : 33
+ 1-bit 4-to-1 multiplexer                              : 1
+ 10-bit 4-to-1 multiplexer                             : 3
+ 13-bit 4-to-1 multiplexer                             : 1
+ 19-bit 4-to-1 multiplexer                             : 2
+ 2-bit 4-to-1 multiplexer                              : 2
+ 24-bit 4-to-1 multiplexer                             : 2
+ 3-bit 11-to-1 multiplexer                             : 1
+ 3-bit 3-to-1 multiplexer                              : 3
+ 3-bit 8-to-1 multiplexer                              : 1
+ 4-bit 11-to-1 multiplexer                             : 1
+ 4-bit 4-to-1 multiplexer                              : 5
+ 6-bit 13-to-1 multiplexer                             : 1
+ 9-bit 4-to-1 multiplexer                              : 10
+# Xors                                                 : 5
+ 1-bit xor2                                            : 4
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_ge0000>, <Mcompar__cmp_ge0012> of unit <LPM_COMPARE_18> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_le0001>, <Mcompar__cmp_le0010> of unit <LPM_COMPARE_21> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_ge0002>, <Mcompar__cmp_ge0015> of unit <LPM_COMPARE_18> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_le0003>, <Mcompar__cmp_le0013> of unit <LPM_COMPARE_21> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_le0004>, <Mcompar__cmp_le0011> of unit <LPM_COMPARE_21> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_le0005>, <Mcompar__cmp_le0014> of unit <LPM_COMPARE_21> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_ge0006>, <Mcompar__cmp_ge0017> of unit <LPM_COMPARE_18> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_ge0007>, <Mcompar__cmp_ge0013> of unit <LPM_COMPARE_18> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_ge0008>, <Mcompar__cmp_ge0018> of unit <LPM_COMPARE_18> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <pipe>: instances <Mcompar__cmp_ge0009>, <Mcompar__cmp_ge0016> of unit <LPM_COMPARE_18> are equivalent, second instance is removed
+WARNING:Xst:1988 - Unit <pipe>: instances <Mcompar__cmp_le0018>, <Mcompar__cmp_gt0000> of unit <LPM_COMPARE_29> and unit <LPM_COMPARE_31> are dual, second instance is removed
+WARNING:Xst:1988 - Unit <Intro_show>: instances <Mcompar__cmp_ge0000>, <Mcompar__cmp_lt0002> of unit <LPM_COMPARE_84> and unit <LPM_COMPARE_90> are dual, second instance is removed
+WARNING:Xst:1988 - Unit <vga_show>: instances <Mcompar__cmp_gt0000>, <Mcompar__cmp_le0000> of unit <LPM_COMPARE_94> and unit <LPM_COMPARE_95> are dual, second instance is removed
+WARNING:Xst:1988 - Unit <vga_show>: instances <Mcompar__cmp_gt0001>, <Mcompar__cmp_le0001> of unit <LPM_COMPARE_94> and unit <LPM_COMPARE_95> are dual, second instance is removed
+WARNING:Xst:1710 - FF/Latch  <pillar_speed_2> (without init value) has a constant value of 0 in block <control>.
+WARNING:Xst:1291 - FF/Latch <pillar_move_1_0> is unconnected in block <control>.
+WARNING:Xst:1291 - FF/Latch <pillar_move_0_0> is unconnected in block <control>.
+WARNING:Xst:1291 - FF/Latch <game_mode_0> is unconnected in block <control>.
+WARNING:Xst:1710 - FF/Latch  <peas_pixel_0> (without init value) has a constant value of 0 in block <Peas_show>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <peas_pixel_1> (without init value) has a constant value of 0 in block <Peas_show>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <peas_pixel_2> (without init value) has a constant value of 0 in block <Peas_show>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <peas_pixel_3> (without init value) has a constant value of 0 in block <Peas_show>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <peas_pixel_4> (without init value) has a constant value of 0 in block <Peas_show>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <peas_pixel_5> (without init value) has a constant value of 0 in block <Peas_show>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <peas_pixel_6> (without init value) has a constant value of 0 in block <Peas_show>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <peas_pixel_7> (without init value) has a constant value of 0 in block <Peas_show>.
+WARNING:Xst:1710 - FF/Latch  <peas_x_0> (without init value) has a constant value of 0 in block <control>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <intro_height_0> (without init value) has a constant value of 0 in block <control>.
+INFO:Xst:2261 - The FF/Latch <pixel_output_18> in Unit <Life_show> is equivalent to the following 2 FFs/Latches, which will be removed : <pixel_output_6> <pixel_output_0> 
+INFO:Xst:2261 - The FF/Latch <pixel_output_7> in Unit <Life_show> is equivalent to the following FF/Latch, which will be removed : <pixel_output_5> 
+INFO:Xst:2261 - The FF/Latch <pixel_output_9> in Unit <Life_show> is equivalent to the following FF/Latch, which will be removed : <pixel_output_1> 
+INFO:Xst:2261 - The FF/Latch <pixel_output_15> in Unit <Life_show> is equivalent to the following 2 FFs/Latches, which will be removed : <pixel_output_12> <pixel_output_4> 
+INFO:Xst:2261 - The FF/Latch <pixel_output_17> in Unit <Life_show> is equivalent to the following 3 FFs/Latches, which will be removed : <pixel_output_11> <pixel_output_8> <pixel_output_3> 
+INFO:Xst:2261 - The FF/Latch <pixel_output_16> in Unit <Life_show> is equivalent to the following 2 FFs/Latches, which will be removed : <pixel_output_10> <pixel_output_2> 
+INFO:Xst:2261 - The FF/Latch <pixel_output_23> in Unit <Life_show> is equivalent to the following 5 FFs/Latches, which will be removed : <pixel_output_22> <pixel_output_21> <pixel_output_20> <pixel_output_14> <pixel_output_13> 
+INFO:Xst:2261 - The FF/Latch <life_pixel_2> in Unit <Life_show> is equivalent to the following 2 FFs/Latches, which will be removed : <life_pixel_10> <life_pixel_16> 
+INFO:Xst:2261 - The FF/Latch <life_pixel_13> in Unit <Life_show> is equivalent to the following 5 FFs/Latches, which will be removed : <life_pixel_14> <life_pixel_20> <life_pixel_21> <life_pixel_22> <life_pixel_23> 
+INFO:Xst:2261 - The FF/Latch <life_pixel_4> in Unit <Life_show> is equivalent to the following 2 FFs/Latches, which will be removed : <life_pixel_12> <life_pixel_15> 
+INFO:Xst:2261 - The FF/Latch <life_pixel_5> in Unit <Life_show> is equivalent to the following FF/Latch, which will be removed : <life_pixel_7> 
+INFO:Xst:2261 - The FF/Latch <life_pixel_1> in Unit <Life_show> is equivalent to the following FF/Latch, which will be removed : <life_pixel_9> 
+INFO:Xst:2261 - The FF/Latch <life_pixel_0> in Unit <Life_show> is equivalent to the following 2 FFs/Latches, which will be removed : <life_pixel_6> <life_pixel_18> 
+INFO:Xst:2261 - The FF/Latch <life_pixel_3> in Unit <Life_show> is equivalent to the following 3 FFs/Latches, which will be removed : <life_pixel_8> <life_pixel_11> <life_pixel_17> 
+INFO:Xst:2261 - The FF/Latch <peas_pixel_16> in Unit <Peas_show> is equivalent to the following 7 FFs/Latches, which will be removed : <peas_pixel_17> <peas_pixel_18> <peas_pixel_19> <peas_pixel_20> <peas_pixel_21> <peas_pixel_22> <peas_pixel_23> 
+INFO:Xst:2261 - The FF/Latch <color_out_23> in Unit <number> is equivalent to the following 23 FFs/Latches, which will be removed : <color_out_22> <color_out_21> <color_out_20> <color_out_19> <color_out_18> <color_out_17> <color_out_16> <color_out_15> <color_out_14> <color_out_13> <color_out_12> <color_out_11> <color_out_10> <color_out_9> <color_out_8> <color_out_7> <color_out_6> <color_out_5> <color_out_4> <color_out_3> <color_out_2> <color_out_1> <color_out_0> 
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _old_color_state_13<0>, _mux0001<23>, color_state<0>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _mux0001<22>, color_state<1>, _old_color_state_13<1>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<2>, _old_color_state_13<2>, _mux0001<21>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<3>, _old_color_state_13<3>, _mux0001<20>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _old_color_state_13<4>, _mux0001<19>, color_state<4>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _mux0001<18>, color_state<5>, _old_color_state_13<5>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<6>, _old_color_state_13<6>, _mux0001<17>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<7>, _old_color_state_13<7>, _mux0001<16>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _old_color_state_13<8>, _mux0001<15>, color_state<8>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _mux0001<14>, color_state<9>, _old_color_state_13<9>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<10>, _old_color_state_13<10>, _mux0001<13>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<11>, _old_color_state_13<11>, _mux0001<12>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _old_color_state_13<12>, _mux0001<11>, color_state<12>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _mux0001<10>, color_state<13>, _old_color_state_13<13>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<14>, _old_color_state_13<14>, _mux0001<9>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<15>, _old_color_state_13<15>, _mux0001<8>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _old_color_state_13<16>, _mux0001<7>, color_state<16>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _old_color_state_13<17>, _mux0001<6>, color_state<17>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<18>, _old_color_state_13<18>, _mux0001<5>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<19>, _old_color_state_13<19>, _mux0001<4>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _old_color_state_13<20>, _mux0001<3>, color_state<20>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: _old_color_state_13<21>, _mux0001<2>, color_state<21>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<22>, _old_color_state_13<22>, _mux0001<1>.
+WARNING:Xst:2170 - Unit pipe : the following signal(s) form a combinatorial loop: color_state<23>, _old_color_state_13<23>, _mux0001<0>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <ps2_ctlr> ...
+
+Optimizing unit <vga_show> ...
+
+Optimizing unit <control> ...
+WARNING:Xst:1710 - FF/Latch  <pillar_speed_1> (without init value) has a constant value of 1 in block <control>.
+WARNING:Xst:1710 - FF/Latch  <gap_width_0> (without init value) has a constant value of 0 in block <control>.
+WARNING:Xst:1710 - FF/Latch  <gap_width_0> (without init value) has a constant value of 0 in block <control>.
+WARNING:Xst:1710 - FF/Latch  <gap_width_0> (without init value) has a constant value of 0 in block <control>.
+WARNING:Xst:1710 - FF/Latch  <gap_width_0> (without init value) has a constant value of 0 in block <control>.
+
+Optimizing unit <ps2_kbd_driver> ...
+
+Optimizing unit <Intro_show> ...
+
+Optimizing unit <Life_show> ...
+
+Optimizing unit <back> ...
+
+Optimizing unit <Peas_show> ...
+
+Optimizing unit <Peashooter_show> ...
+
+Optimizing unit <Wing_show> ...
+
+Optimizing unit <Bird_show> ...
+
+Optimizing unit <number> ...
+
+Optimizing unit <pipe> ...
+
+Optimizing unit <bird_info_gen> ...
+
+Optimizing unit <clk_div> ...
+
+Mapping all equations...
+WARNING:Xst:1291 - FF/Latch <control1/position_stripe_4> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <control1/position_stripe_5> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <control1/position_stripe_6> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <control1/position_stripe_7> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <control1/position_stripe_8> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/clk_2hz> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/clk_400hz> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_0> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_1> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_2> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_3> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_4> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_5> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_6> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_7> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_8> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_9> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_10> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_11> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_12> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_13> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_14> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_15> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter4_16> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_0> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_1> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_2> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_3> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_4> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_5> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_6> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_7> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_8> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_9> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_10> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_11> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_12> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_13> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_14> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_15> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_16> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_17> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_18> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_19> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_20> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_21> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_22> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_23> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_24> is unconnected in block <top>.
+WARNING:Xst:1291 - FF/Latch <clk_div1/counter3_25> is unconnected in block <top>.
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/pixel_output_intro_20> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Intro_show/pixel_output_intro_19> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/pixel_output_intro_23> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_show1/Intro_show/pixel_output_intro_21> <vga_show1/Intro_show/pixel_output_intro_18> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Bird_show/bird_pixel_21> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Bird_show/bird_pixel_23> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Peas_show/peas_pixel_8> in Unit <top> is equivalent to the following 7 FFs/Latches, which will be removed : <vga_show1/Peas_show/peas_pixel_9> <vga_show1/Peas_show/peas_pixel_10> <vga_show1/Peas_show/peas_pixel_11> <vga_show1/Peas_show/peas_pixel_12> <vga_show1/Peas_show/peas_pixel_13> <vga_show1/Peas_show/peas_pixel_14> <vga_show1/Peas_show/peas_pixel_15> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Bird_show/bird_pixel_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Bird_show/bird_pixel_9> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Bird_show/bird_pixel_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Bird_show/bird_pixel_6> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Bird_show/bird_pixel_12> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Bird_show/bird_pixel_15> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/pixel_output_intro_15> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Intro_show/pixel_output_intro_6> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Bird_show/bird_pixel_11> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Bird_show/bird_pixel_17> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/pixel_output_intro_17> in Unit <top> is equivalent to the following 9 FFs/Latches, which will be removed : <vga_show1/Intro_show/pixel_output_intro_16> <vga_show1/Intro_show/pixel_output_intro_10> <vga_show1/Intro_show/pixel_output_intro_9> <vga_show1/Intro_show/pixel_output_intro_8> <vga_show1/Intro_show/pixel_output_intro_7> <vga_show1/Intro_show/pixel_output_intro_5> <vga_show1/Intro_show/pixel_output_intro_2> <vga_show1/Intro_show/pixel_output_intro_1> <vga_show1/Intro_show/pixel_output_intro_0> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Bird_show/bird_pixel_13> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Bird_show/bird_pixel_20> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/pixel_output_intro_14> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Intro_show/pixel_output_intro_4> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/intro_pixel_19> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Intro_show/intro_pixel_20> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/intro_pixel_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Intro_show/intro_pixel_14> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/intro_pixel_18> in Unit <top> is equivalent to the following 2 FFs/Latches, which will be removed : <vga_show1/Intro_show/intro_pixel_21> <vga_show1/Intro_show/intro_pixel_23> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/intro_pixel_0> in Unit <top> is equivalent to the following 9 FFs/Latches, which will be removed : <vga_show1/Intro_show/intro_pixel_1> <vga_show1/Intro_show/intro_pixel_2> <vga_show1/Intro_show/intro_pixel_5> <vga_show1/Intro_show/intro_pixel_7> <vga_show1/Intro_show/intro_pixel_8> <vga_show1/Intro_show/intro_pixel_9> <vga_show1/Intro_show/intro_pixel_10> <vga_show1/Intro_show/intro_pixel_16> <vga_show1/Intro_show/intro_pixel_17> 
+INFO:Xst:2261 - The FF/Latch <vga_show1/Intro_show/intro_pixel_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <vga_show1/Intro_show/intro_pixel_15> 
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 18.
+FlipFlop vga_show1/vga/H_Pixel_Count_0 has been replicated 2 time(s)
+FlipFlop vga_show1/vga/H_Pixel_Count_1 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/H_Pixel_Count_2 has been replicated 4 time(s)
+FlipFlop vga_show1/vga/H_Pixel_Count_3 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/H_Pixel_Count_4 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/H_Pixel_Count_5 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/H_Pixel_Count_6 has been replicated 4 time(s)
+FlipFlop vga_show1/vga/H_Pixel_Count_7 has been replicated 1 time(s)
+FlipFlop vga_show1/vga/H_Pixel_Count_8 has been replicated 2 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_0 has been replicated 2 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_1 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_2 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_3 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_4 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_5 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_6 has been replicated 3 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_7 has been replicated 2 time(s)
+FlipFlop vga_show1/vga/V_Line_Count_8 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <top> :
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_0> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_1> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_2> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_3> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_4> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_5> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_6> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_7> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_8> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_10> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_11> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_12> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_13> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_14> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <ps2_ctlr1/ps2_data_syn2_15> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <control1/random_256_gen2/random_5> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 2-bit shift register was found for signal <control1/random_256_gen2/random_3> and currently occupies 2 logic cells (1 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 5-bit shift register was found for signal <control1/random_256_gen2/random_7> and currently occupies 5 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:2387 - HDL ADVISOR - A 5-bit shift register was found for signal <control1/random_256_gen1/random_7> and currently occupies 5 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 605
+ Flip-Flops                                            : 605
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 33
+
+Cell Usage :
+# BELS                             : 6622
+#      GND                         : 21
+#      INV                         : 133
+#      LUT1                        : 159
+#      LUT2                        : 667
+#      LUT2_D                      : 20
+#      LUT2_L                      : 11
+#      LUT3                        : 900
+#      LUT3_D                      : 42
+#      LUT3_L                      : 30
+#      LUT4                        : 2199
+#      LUT4_D                      : 121
+#      LUT4_L                      : 150
+#      MULT_AND                    : 10
+#      MUXCY                       : 1271
+#      MUXF5                       : 307
+#      MUXF6                       : 38
+#      MUXF7                       : 2
+#      VCC                         : 21
+#      XORCY                       : 520
+# FlipFlops/Latches                : 651
+#      FDC                         : 320
+#      FDC_1                       : 4
+#      FDCE                        : 230
+#      FDCE_1                      : 26
+#      FDE                         : 11
+#      FDP                         : 15
+#      FDPE                        : 10
+#      LD                          : 35
+# RAMS                             : 76
+#      RAMB16_S18_S18              : 7
+#      RAMB16_S2_S2                : 28
+#      RAMB16_S36_S36              : 10
+#      RAMB16_S4_S4                : 3
+#      RAMB16_S9_S9                : 28
+# Clock Buffers                    : 4
+#      BUFG                        : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 31
+#      IBUF                        : 2
+#      OBUF                        : 29
+# MULTs                            : 10
+#      MULT18X18                   : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-6 
+
+ Number of Slices:                    2364  out of  13696    17%  
+ Number of Slice Flip Flops:           651  out of  27392     2%  
+ Number of 4 input LUTs:              4432  out of  27392    16%  
+ Number of IOs:                         33
+ Number of bonded IOBs:                 33  out of    556     5%  
+ Number of BRAMs:                       76  out of    136    55%  
+ Number of MULT18X18s:                  10  out of    136     7%  
+ Number of GCLKs:                        4  out of     16    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                             | Clock buffer(FF name)                                                                                                 | Load  |
+-------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------+
+clk                                                                      | BUFGP                                                                                                                 | 56    |
+clk_div1/clk_25mhz1                                                      | BUFG                                                                                                                  | 358   |
+vga_show1/brick/brick_rom1/BU2/doutb(0)                                  | NONE(vga_show1/brick/brick_rom1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp9x9.ram)                | 1     |
+clk_div1/clk_60hz1                                                       | BUFG                                                                                                                  | 248   |
+clk_ps2                                                                  | BUFGP                                                                                                                 | 30    |
+vga_show1/Intro_show/rom_intro_0/BU2/doutb(0)                            | NONE(vga_show1/Intro_show/rom_intro_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v2.ram/dp4x4.ram)          | 6     |
+vga_show1/Intro_show/rom_score_intro_0/BU2/doutb(0)                      | NONE(vga_show1/Intro_show/rom_score_intro_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp18x18.ram)  | 1     |
+vga_show1/Intro_show/_or0000(vga_show1/Intro_show/_or0000_f5:O)          | NONE(*)(vga_show1/Intro_show/pixel_output_intro_11)                                                                   | 10    |
+vga_show1/Life_show/rom_life_0/BU2/doutb(0)                              | NONE(vga_show1/Life_show/rom_life_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)          | 1     |
+vga_show1/Life_show/_not0004(vga_show1/Life_show/_not0004_f5:O)          | NONE(*)(vga_show1/Life_show/pixel_output_7)                                                                           | 8     |
+vga_show1/back/bgd/BU2/doutb(0)                                          | NONE(vga_show1/back/bgd/BU2/U0/blk_mem_generator/valid.cstr/ramloop[7].ram.r/v2.ram/dp2x2.ram)                        | 15    |
+vga_show1/Peas_show/rom_peas/BU2/doutb(0)                                | NONE(vga_show1/Peas_show/rom_peas/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)            | 1     |
+vga_show1/Peashooter_show/rom_peashooter_0/BU2/doutb(0)                  | NONE(vga_show1/Peashooter_show/rom_peashooter_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[9].ram.r/v2.ram/dp9x9.ram)| 11    |
+vga_show1/Peashooter_show/rom_peashooter_1/BU2/doutb(0)                  | NONE(vga_show1/Peashooter_show/rom_peashooter_1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v2.ram/dp9x9.ram)| 11    |
+vga_show1/Peashooter_show/rom_peashooter_2/BU2/doutb(0)                  | NONE(vga_show1/Peashooter_show/rom_peashooter_2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[6].ram.r/v2.ram/dp9x9.ram)| 14    |
+vga_show1/Peashooter_show/rom_cloud/BU2/doutb(0)                         | NONE(vga_show1/Peashooter_show/rom_cloud/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp4x4.ram)       | 1     |
+vga_show1/Peashooter_show/_not0003(vga_show1/Peashooter_show/_not00031:O)| NONE(*)(vga_show1/Peashooter_show/rom_output_select_0)                                                                | 6     |
+vga_show1/Wing_show/wing_rom_0/BU2/doutb(0)                              | NONE(vga_show1/Wing_show/wing_rom_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v2.ram/dp18x18.ram)          | 3     |
+vga_show1/Bird_show/_or0000(vga_show1/Bird_show/_or00001:O)              | NONE(*)(vga_show1/Wing_show/rom_output_select_0)                                                                      | 7     |
+vga_show1/Bird_show/rom_bird_0/BU2/doutb(0)                              | NONE(vga_show1/Bird_show/rom_bird_0/BU2/U0/blk_mem_generator/valid.cstr/ramloop[1].ram.r/v2.ram/dp18x18.ram)          | 3     |
+vga_show1/number/num_rom_1/BU2/doutb(0)                                  | NONE(vga_show1/number/num_rom_1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)              | 1     |
+vga_show1/number/num_rom_2/BU2/doutb(0)                                  | NONE(vga_show1/number/num_rom_2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)              | 1     |
+vga_show1/number/num_rom_3/BU2/doutb(0)                                  | NONE(vga_show1/number/num_rom_3/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)              | 1     |
+vga_show1/number/num_rom_4/BU2/doutb(0)                                  | NONE(vga_show1/number/num_rom_4/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)              | 1     |
+vga_show1/number/num_rom_5/BU2/doutb(0)                                  | NONE(vga_show1/number/num_rom_5/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)              | 1     |
+vga_show1/number/num_rom_6/BU2/doutb(0)                                  | NONE(vga_show1/number/num_rom_6/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)              | 1     |
+vga_show1/number/num_rom_7/BU2/doutb(0)                                  | NONE(vga_show1/number/num_rom_7/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)              | 1     |
+vga_show1/number/num_rom_8/BU2/doutb(0)                                  | NONE(vga_show1/number/num_rom_8/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram)              | 1     |
+vga_show1/number/_not0003(vga_show1/number/_not0003181:O)                | NONE(*)(vga_show1/number/black_white_select_0)                                                                        | 2     |
+vga_show1/number/black_white_select_1                                    | NONE(vga_show1/number/color_out_23)                                                                                   | 1     |
+vga_show1/pipe/stripe_valid(vga_show1/pipe/stripe_valid38:O)             | NONE(*)(vga_show1/pipe/stripe_color_mux)                                                                              | 1     |
+-------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------+--------------------------------+-------+
+Control Signal                                                | Buffer(FF name)                | Load  |
+--------------------------------------------------------------+--------------------------------+-------+
+ps2_ctlr1/rst_n_inv(ps2_ctlr1/rst_n_inv11_INV_0:O)            | NONE(clk_div1/counter1_19)     | 303   |
+ps2_ctlr1/rst_n_inv11_INV_0_1(ps2_ctlr1/rst_n_inv11_INV_0_1:O)| NONE(ps2_ctlr1/ps2_data_syn2_9)| 302   |
+--------------------------------------------------------------+--------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: 12.691ns (Maximum Frequency: 78.794MHz)
+   Minimum input arrival time before clock: 5.054ns
+   Maximum output required time after clock: 3.670ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.320ns (frequency: 231.481MHz)
+  Total number of paths / destination ports: 713 / 42
+-------------------------------------------------------------------------
+Delay:               4.320ns (Levels of Logic = 22)
+  Source:            clk_div1/counter1_1 (FF)
+  Destination:       clk_div1/counter1_20 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_div1/counter1_1 to clk_div1/counter1_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.374   0.588  clk_div1/counter1_1 (clk_div1/counter1_1)
+     LUT1:I0->O            1   0.313   0.000  clk_div1/counter1_1_rt (clk_div1/counter1_1_rt)
+     MUXCY:S->O            1   0.377   0.000  clk_div1/Mcount_counter1_cy<1> (clk_div1/Mcount_counter1_cy<1>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<2> (clk_div1/Mcount_counter1_cy<2>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<3> (clk_div1/Mcount_counter1_cy<3>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<4> (clk_div1/Mcount_counter1_cy<4>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<5> (clk_div1/Mcount_counter1_cy<5>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<6> (clk_div1/Mcount_counter1_cy<6>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<7> (clk_div1/Mcount_counter1_cy<7>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<8> (clk_div1/Mcount_counter1_cy<8>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<9> (clk_div1/Mcount_counter1_cy<9>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<10> (clk_div1/Mcount_counter1_cy<10>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<11> (clk_div1/Mcount_counter1_cy<11>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<12> (clk_div1/Mcount_counter1_cy<12>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<13> (clk_div1/Mcount_counter1_cy<13>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<14> (clk_div1/Mcount_counter1_cy<14>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<15> (clk_div1/Mcount_counter1_cy<15>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<16> (clk_div1/Mcount_counter1_cy<16>)
+     MUXCY:CI->O           1   0.042   0.000  clk_div1/Mcount_counter1_cy<17> (clk_div1/Mcount_counter1_cy<17>)
+     MUXCY:CI->O           1   0.041   0.000  clk_div1/Mcount_counter1_cy<18> (clk_div1/Mcount_counter1_cy<18>)
+     MUXCY:CI->O           0   0.041   0.000  clk_div1/Mcount_counter1_cy<19> (clk_div1/Mcount_counter1_cy<19>)
+     XORCY:CI->O           1   0.868   0.506  clk_div1/Mcount_counter1_xor<20> (clk_div1/Result<20>)
+     LUT2:I1->O            1   0.313   0.000  clk_div1/counter1_Eqn_201 (clk_div1/counter1_Eqn_20)
+     FDC:D                     0.234          clk_div1/counter1_20
+    ----------------------------------------
+    Total                      4.320ns (3.226ns logic, 1.094ns route)
+                                       (74.7% logic, 25.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div1/clk_25mhz1'
+  Clock period: 12.691ns (frequency: 78.794MHz)
+  Total number of paths / destination ports: 2139832 / 1071
+-------------------------------------------------------------------------
+Delay:               12.691ns (Levels of Logic = 16)
+  Source:            vga_show1/vga/V_Line_Count_1_1 (FF)
+  Destination:       vga_show1/pipe/color_out_0 (FF)
+  Source Clock:      clk_div1/clk_25mhz1 rising
+  Destination Clock: clk_div1/clk_25mhz1 rising
+
+  Data Path: vga_show1/vga/V_Line_Count_1_1 to vga_show1/pipe/color_out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.374   0.467  vga_show1/vga/V_Line_Count_1_1 (vga_show1/vga/V_Line_Count_1_1)
+     INV:I->O              1   0.313   0.390  vga_show1/_not0005<1>1_INV_0 (vga_show1/_not0005<1>)
+     MUXCY:DI->O           1   0.595   0.000  vga_show1/pipe/Madd__add0024_cy<1> (vga_show1/pipe/Madd__add0024_cy<1>)
+     MUXCY:CI->O           1   0.042   0.000  vga_show1/pipe/Madd__add0024_cy<2> (vga_show1/pipe/Madd__add0024_cy<2>)
+     XORCY:CI->O          30   0.868   0.902  vga_show1/pipe/Madd__add0024_xor<3> (vga_show1/pipe/Madd__add0021_lut<3>)
+     LUT3_D:I1->LO         1   0.313   0.150  vga_show1/pipe/Madd__add0021_cy<5>1_SW0 (N12242)
+     LUT4:I3->O            6   0.313   0.524  vga_show1/pipe/_addsub0001<7>1 (vga_show1/pipe/_addsub0001<7>)
+     MUXCY:DI->O           1   0.595   0.000  vga_show1/pipe/Mcompar__cmp_ge0011_cy<7> (vga_show1/pipe/Mcompar__cmp_ge0011_cy<7>)
+     MUXCY:CI->O           1   0.042   0.000  vga_show1/pipe/Mcompar__cmp_ge0011_cy<8> (vga_show1/pipe/Mcompar__cmp_ge0011_cy<8>)
+     MUXCY:CI->O          26   0.524   0.808  vga_show1/pipe/Mcompar__cmp_ge0011_cy<9> (vga_show1/pipe/_cmp_ge0011)
+     LUT3_D:I2->O         41   0.313   0.833  vga_show1/pipe/_and00021 (vga_show1/pipe/state_3)
+     LUT4:I2->O            1   0.313   0.440  vga_show1/pipe/color_state<13>13_SW0_SW1_SW0 (N10824)
+     LUT4:I3->O            6   0.313   0.552  vga_show1/pipe/color_state<13>13 (vga_show1/pipe/N1181)
+     LUT4:I2->O            1   0.313   0.506  vga_show1/pipe/color_state<13>1_SW0 (N10603)
+     LUT4:I1->O            2   0.313   0.588  vga_show1/pipe/color_state<13>1 (vga_show1/pipe/N6310)
+     LUT4_D:I0->LO         1   0.313   0.128  vga_show1/pipe/color_state<0>101 (N12233)
+     LUT4:I2->O            1   0.313   0.000  vga_show1/pipe/_mux0001<23>1 (vga_show1/pipe/_mux0001<23>)
+     FDC:D                     0.234          vga_show1/pipe/color_out_0
+    ----------------------------------------
+    Total                     12.691ns (6.403ns logic, 6.288ns route)
+                                       (50.5% logic, 49.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_div1/clk_60hz1'
+  Clock period: 9.620ns (frequency: 103.954MHz)
+  Total number of paths / destination ports: 232294 / 413
+-------------------------------------------------------------------------
+Delay:               9.620ns (Levels of Logic = 23)
+  Source:            control1/bird_tap_time_1 (FF)
+  Destination:       control1/bird_tap_height_3 (FF)
+  Source Clock:      clk_div1/clk_60hz1 rising
+  Destination Clock: clk_div1/clk_60hz1 rising
+
+  Data Path: control1/bird_tap_time_1 to control1/bird_tap_height_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q           101   0.374   1.021  control1/bird_tap_time_1 (control1/bird_tap_time_1)
+     LUT4:I1->O            1   0.313   0.506  control1/bird_info_gen/Mrom__mux00003 (control1/bird_info_gen/N6)
+     LUT3:I1->O            1   0.313   0.000  control1/bird_info_gen/bird_tap_time<4>2 (control1/bird_info_gen/N411)
+     MUXF5:I1->O           1   0.340   0.506  control1/bird_info_gen/bird_tap_time<5>_f5_0 (control1/bird_info_gen/bird_tap_time<5>_f51)
+     LUT4:I1->O            4   0.313   0.629  control1/bird_info_gen/bird_go_up<0>11 (control1/bird_go_up<0>)
+     LUT2:I0->O            2   0.313   0.000  control1/Madd__add0000_lut<0> (control1/N139)
+     MUXCY:S->O            1   0.377   0.000  control1/Madd__add0000_cy<0> (control1/Madd__add0000_cy<0>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<1> (control1/Madd__add0000_cy<1>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<2> (control1/Madd__add0000_cy<2>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<3> (control1/Madd__add0000_cy<3>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<4> (control1/Madd__add0000_cy<4>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<5> (control1/Madd__add0000_cy<5>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<6> (control1/Madd__add0000_cy<6>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<7> (control1/Madd__add0000_cy<7>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<8> (control1/Madd__add0000_cy<8>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<9> (control1/Madd__add0000_cy<9>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<10> (control1/Madd__add0000_cy<10>)
+     MUXCY:CI->O           1   0.042   0.000  control1/Madd__add0000_cy<11> (control1/Madd__add0000_cy<11>)
+     MUXCY:CI->O           0   0.042   0.000  control1/Madd__add0000_cy<12> (control1/Madd__add0000_cy<12>)
+     XORCY:CI->O           4   0.868   0.536  control1/Madd__add0000_xor<13> (control1/_add0000<13>)
+     LUT4:I3->O            1   0.313   0.000  control1/Mcompar__cmp_lt0001_lut<4> (control1/N175)
+     MUXCY:S->O            1   0.377   0.000  control1/Mcompar__cmp_lt0001_cy<4> (control1/Mcompar__cmp_lt0001_cy<4>)
+     MUXCY:CI->O          43   0.524   0.951  control1/Mcompar__cmp_lt0001_cy<5> (control1/Mcompar__cmp_lt0001_cy<5>)
+     LUT4:I0->O            1   0.313   0.000  control1/_mux0019<9>1 (control1/_mux0019<9>)
+     FDPE:D                    0.234          control1/bird_tap_height_3
+    ----------------------------------------
+    Total                      9.620ns (5.471ns logic, 4.149ns route)
+                                       (56.9% logic, 43.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_ps2'
+  Clock period: 4.504ns (frequency: 222.025MHz)
+  Total number of paths / destination ports: 455 / 55
+-------------------------------------------------------------------------
+Delay:               4.504ns (Levels of Logic = 4)
+  Source:            ps2_ctlr1/ps2driv/count_2 (FF)
+  Destination:       ps2_ctlr1/ps2driv/count_3 (FF)
+  Source Clock:      clk_ps2 falling
+  Destination Clock: clk_ps2 falling
+
+  Data Path: ps2_ctlr1/ps2driv/count_2 to ps2_ctlr1/ps2driv/count_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            3   0.374   0.583  ps2_ctlr1/ps2driv/count_2 (ps2_ctlr1/ps2driv/count_2)
+     LUT4:I1->O            1   0.313   0.533  ps2_ctlr1/ps2driv/_and000055 (ps2_ctlr1/ps2driv/_and0000_map1634)
+     LUT3:I0->O            2   0.313   0.495  ps2_ctlr1/ps2driv/_and000065_SW0 (N11627)
+     LUT4:I3->O           20   0.313   0.727  ps2_ctlr1/ps2driv/_and000065 (ps2_ctlr1/ps2driv/_and0000)
+     MUXF5:S->O            1   0.619   0.000  ps2_ctlr1/ps2driv/count__mux0000<3>_f5 (ps2_ctlr1/ps2driv/count__mux0000<3>)
+     FDC_1:D                   0.234          ps2_ctlr1/ps2driv/count_3
+    ----------------------------------------
+    Total                      4.504ns (2.166ns logic, 2.338ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_ps2'
+  Total number of paths / destination ports: 31 / 31
+-------------------------------------------------------------------------
+Offset:              5.054ns (Levels of Logic = 5)
+  Source:            data_ps2 (PAD)
+  Destination:       ps2_ctlr1/ps2driv/count_3 (FF)
+  Destination Clock: clk_ps2 falling
+
+  Data Path: data_ps2 to ps2_ctlr1/ps2driv/count_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.919   0.588  data_ps2_IBUF (data_ps2_IBUF)
+     LUT4:I0->O            1   0.313   0.533  ps2_ctlr1/ps2driv/_and000055 (ps2_ctlr1/ps2driv/_and0000_map1634)
+     LUT3:I0->O            2   0.313   0.495  ps2_ctlr1/ps2driv/_and000065_SW0 (N11627)
+     LUT4:I3->O           20   0.313   0.727  ps2_ctlr1/ps2driv/_and000065 (ps2_ctlr1/ps2driv/_and0000)
+     MUXF5:S->O            1   0.619   0.000  ps2_ctlr1/ps2driv/count__mux0000<3>_f5 (ps2_ctlr1/ps2driv/count__mux0000<3>)
+     FDC_1:D                   0.234          ps2_ctlr1/ps2driv/count_3
+    ----------------------------------------
+    Total                      5.054ns (2.711ns logic, 2.343ns route)
+                                       (53.6% logic, 46.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.670ns (Levels of Logic = 1)
+  Source:            clk_div1/clk_25mhz (FF)
+  Destination:       vga_clk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clk_div1/clk_25mhz to vga_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.374   0.445  clk_div1/clk_25mhz (clk_div1/clk_25mhz1)
+     OBUF:I->O                 2.851          vga_clk_OBUF (vga_clk)
+    ----------------------------------------
+    Total                      3.670ns (3.225ns logic, 0.445ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div1/clk_25mhz1'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              3.615ns (Levels of Logic = 1)
+  Source:            vga_show1/vga/H_Sysc (FF)
+  Destination:       h_sysc (PAD)
+  Source Clock:      clk_div1/clk_25mhz1 rising
+
+  Data Path: vga_show1/vga/H_Sysc to h_sysc
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.374   0.390  vga_show1/vga/H_Sysc (vga_show1/vga/H_Sysc)
+     OBUF:I->O                 2.851          h_sysc_OBUF (h_sysc)
+    ----------------------------------------
+    Total                      3.615ns (3.225ns logic, 0.390ns route)
+                                       (89.2% logic, 10.8% route)
+
+=========================================================================
+CPU : 116.64 / 116.75 s | Elapsed : 116.00 / 116.00 s
+ 
+--> 
+
+Total memory usage is 242796 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  212 (   0 filtered)
+Number of infos    :   64 (   0 filtered)
+

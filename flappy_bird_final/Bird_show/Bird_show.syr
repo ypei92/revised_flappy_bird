@@ -1,0 +1,436 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.09 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.09 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: Bird_show.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Bird_show.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Bird_show"
+Output Format                      : NGC
+Target Device                      : xc2vp30-6-ff896
+
+---- Source Options
+Top Module Name                    : Bird_show
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : Bird_show.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+tristate2logic                     : Yes
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "bird_0.v" in library work
+Compiling verilog file "Bird_show.v" in library work
+Module <bird_0> compiled
+Module <Bird_show> compiled
+No errors in compilation
+Analysis of file <"Bird_show.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Bird_show> in library <work> with parameters.
+	bird_length = "11111"
+	bird_location_horizontal = "1100100"
+	bird_width = "11111"
+	black = "000000000000000000000000"
+	body_yellow = "111110001111001000010010"
+	grey = "111101001111000011110001"
+	red = "111111100110100101001001"
+	white = "111111111111111111111111"
+
+Building hierarchy successfully finished.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Bird_show>.
+	bird_length = 5'b11111
+	bird_width = 5'b11111
+	bird_location_horizontal = 7'b1100100
+	black = 24'b000000000000000000000000
+	white = 24'b111111111111111111111111
+	red = 24'b111111100110100101001001
+	grey = 24'b111101001111000011110001
+	body_yellow = 24'b111110001111001000010010
+WARNING:Xst:905 - "Bird_show.v" line 86: The signals <body_color> are missing in the sensitivity list of always block.
+WARNING:Xst:2211 - "bird_0.v" line 76: Instantiating black box module <bird_0>.
+Module <Bird_show> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Bird_show>.
+    Related source file is "Bird_show.v".
+WARNING:Xst:647 - Input <bird_angle> is never used.
+WARNING:Xst:647 - Input <bird_color_select> is never used.
+    Found 24-bit register for signal <bird_pixel>.
+    Found 1-bit register for signal <bird_pixel_valid>.
+    Found 10-bit adder for signal <$addsub0000> created at line 74.
+    Found 5-bit adder for signal <$addsub0001> created at line 72.
+    Found 9-bit adder carry out for signal <$addsub0003> created at line 65.
+    Found 10-bit comparator greater for signal <$cmp_gt0000> created at line 65.
+    Found 10-bit comparator greater for signal <$cmp_gt0001> created at line 65.
+    Found 10-bit comparator less for signal <$cmp_lt0000> created at line 65.
+    Found 10-bit comparator less for signal <$cmp_lt0001> created at line 65.
+    Found 5x5-bit multiplier for signal <$mult0000> created at line 74.
+    Found 5-bit subtractor for signal <column_in_pic>.
+    Found 5-bit subtractor for signal <row_in_pic>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   4 Comparator(s).
+Unit <Bird_show> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 5x5-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 2
+ 9-bit adder carry out                                 : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 24-bit register                                       : 1
+# Comparators                                          : 4
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx\8.2.
+INFO:Xst:2261 - The FF/Latch <bird_pixel_2> in Unit <Bird_show> is equivalent to the following 2 FFs/Latches, which will be removed : <bird_pixel_10> <bird_pixel_16> 
+INFO:Xst:2261 - The FF/Latch <bird_pixel_1> in Unit <Bird_show> is equivalent to the following FF/Latch, which will be removed : <bird_pixel_9> 
+INFO:Xst:2261 - The FF/Latch <bird_pixel_13> in Unit <Bird_show> is equivalent to the following 5 FFs/Latches, which will be removed : <bird_pixel_14> <bird_pixel_20> <bird_pixel_21> <bird_pixel_22> <bird_pixel_23> 
+INFO:Xst:2261 - The FF/Latch <bird_pixel_0> in Unit <Bird_show> is equivalent to the following 2 FFs/Latches, which will be removed : <bird_pixel_6> <bird_pixel_18> 
+INFO:Xst:2261 - The FF/Latch <bird_pixel_3> in Unit <Bird_show> is equivalent to the following 3 FFs/Latches, which will be removed : <bird_pixel_8> <bird_pixel_11> <bird_pixel_17> 
+INFO:Xst:2261 - The FF/Latch <bird_pixel_5> in Unit <Bird_show> is equivalent to the following FF/Latch, which will be removed : <bird_pixel_7> 
+INFO:Xst:2261 - The FF/Latch <bird_pixel_4> in Unit <Bird_show> is equivalent to the following 2 FFs/Latches, which will be removed : <bird_pixel_12> <bird_pixel_15> 
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 5x5-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 2
+ 9-bit adder carry out                                 : 1
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 4
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Bird_show> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Bird_show, actual ratio is 0.
+FlipFlop bird_pixel_13 has been replicated 5 time(s) to handle iob=true attribute.
+FlipFlop bird_pixel_0 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop bird_pixel_3 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop bird_pixel_2 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop bird_pixel_4 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop bird_pixel_1 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop bird_pixel_5 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Bird_show.ngr
+Top Level Output File Name         : Bird_show
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 63
+
+Cell Usage :
+# BELS                             : 156
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 5
+#      LUT2                        : 22
+#      LUT3                        : 17
+#      LUT4                        : 40
+#      MULT_AND                    : 1
+#      MUXCY                       : 41
+#      MUXF5                       : 3
+#      VCC                         : 1
+#      XORCY                       : 22
+# FlipFlops/Latches                : 25
+#      FDC                         : 25
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 56
+#      IBUF                        : 31
+#      OBUF                        : 25
+# Others                           : 1
+#      bird_0                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-6 
+
+ Number of Slices:                      47  out of  13696     0%  
+ Number of 4 input LUTs:                87  out of  27392     0%  
+ Number of IOs:                         63
+ Number of bonded IOBs:                 57  out of    556    10%  
+    IOB Flip Flops:                     25
+ Number of GCLKs:                        1  out of     16     6%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 25    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_n_inv(rst_n_inv1_INV_0:O)      | NONE(bird_pixel_13_3)  | 25    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -6
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 8.028ns
+   Maximum output required time after clock: 3.615ns
+   Maximum combinational path delay: 10.275ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4166 / 25
+-------------------------------------------------------------------------
+Offset:              8.028ns (Levels of Logic = 10)
+  Source:            bird_height<2> (PAD)
+  Destination:       bird_pixel_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: bird_height<2> to bird_pixel_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.919   0.678  bird_height_2_IBUF (bird_height_2_IBUF)
+     LUT4:I1->O            1   0.313   0.000  Madd__addsub0003_xor<8>111 (N145)
+     MUXF5:I0->O           7   0.340   0.575  Madd__addsub0003_xor<8>11_f5 (N1)
+     LUT3:I2->O            3   0.313   0.495  Madd__addsub0003_xor<7>111 (N141)
+     LUT3:I2->O            0   0.313   0.000  Madd__addsub0003_xor<8>12 (_addsub0003<8>)
+     MUXCY:DI->O           1   0.595   0.000  Mcompar__cmp_gt0001_cy<8> (Mcompar__cmp_gt0001_cy<8>)
+     MUXCY:CI->O           1   0.524   0.418  Mcompar__cmp_gt0001_cy<9> (Mcompar__cmp_gt0001_cy<9>)
+     LUT4:I2->O           11   0.313   0.641  _mux0000<5>182 (_mux0000<5>1_map24)
+     LUT4:I2->O            9   0.313   0.730  _mux0000<6>11 (_mux0001)
+     LUT4:I0->O            3   0.313   0.000  _mux0000<8>1 (_mux0000<8>)
+     FDC:D                     0.234          bird_pixel_4
+    ----------------------------------------
+    Total                      8.028ns (4.491ns logic, 3.537ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.615ns (Levels of Logic = 1)
+  Source:            bird_pixel_valid (FF)
+  Destination:       bird_pixel_valid (PAD)
+  Source Clock:      clk rising
+
+  Data Path: bird_pixel_valid to bird_pixel_valid
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.374   0.390  bird_pixel_valid (bird_pixel_valid_OBUF)
+     OBUF:I->O                 2.851          bird_pixel_valid_OBUF (bird_pixel_valid)
+    ----------------------------------------
+    Total                      3.615ns (3.225ns logic, 0.390ns route)
+                                       (89.2% logic, 10.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 13441 / 10
+-------------------------------------------------------------------------
+Delay:               10.275ns (Levels of Logic = 15)
+  Source:            bird_height<0> (PAD)
+  Destination:       rom_bird_0:A<9> (PAD)
+
+  Data Path: bird_height<0> to rom_bird_0:A<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   0.919   0.756  bird_height_0_IBUF (bird_height_0_IBUF)
+     LUT4:I0->O            2   0.313   0.588  _addsub0001<3>1 (_addsub0001<3>)
+     LUT2:I0->O            1   0.313   0.000  Msub_row_in_pic_lut<3> (N13)
+     MUXCY:S->O            0   0.377   0.000  Msub_row_in_pic_cy<3> (Msub_row_in_pic_cy<3>)
+     XORCY:CI->O          10   0.868   0.717  Msub_row_in_pic_xor<4> (Mmult__mult0000_Madd_lut<4>)
+     LUT4:I1->O            1   0.313   0.533  Mmult__mult0000_Madd2_xor<5>11 (Mmult__mult0000_Madd_52)
+     LUT4:I0->O            1   0.313   0.000  Mmult__mult0000_Madd3_lut<5> (N41)
+     MUXCY:S->O            1   0.377   0.000  Mmult__mult0000_Madd3_cy<5> (Mmult__mult0000_Madd3_cy<5>)
+     MUXCY:CI->O           1   0.042   0.000  Mmult__mult0000_Madd3_cy<6> (Mmult__mult0000_Madd3_cy<6>)
+     MUXCY:CI->O           1   0.042   0.000  Mmult__mult0000_Madd3_cy<7> (Mmult__mult0000_Madd3_cy<7>)
+     XORCY:CI->O           1   0.868   0.533  Mmult__mult0000_Madd3_xor<8> (_mult0000<8>)
+     LUT1:I0->O            1   0.313   0.000  _mult0000<8>_rt (_mult0000<8>_rt)
+     MUXCY:S->O            0   0.377   0.000  Madd__addsub0000_cy<8> (Madd__addsub0000_cy<8>)
+     XORCY:CI->O           1   0.868   0.533  Madd__addsub0000_xor<9> (_addsub0000<9>)
+     LUT4:I0->O            0   0.313   0.000  rom_address<9>1 (rom_address<9>)
+    bird_0:A<9>                0.000          rom_bird_0
+    ----------------------------------------
+    Total                     10.275ns (6.615ns logic, 3.660ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+CPU : 3.88 / 3.99 s | Elapsed : 4.00 / 4.00 s
+ 
+--> 
+
+Total memory usage is 180332 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

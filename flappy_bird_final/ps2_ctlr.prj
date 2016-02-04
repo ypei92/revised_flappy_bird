@@ -1,0 +1,2 @@
+verilog work "ps2_kbd_driver.v"
+verilog work "ps2_ctlr.v"

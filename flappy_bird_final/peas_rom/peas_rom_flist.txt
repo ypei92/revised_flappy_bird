@@ -1,0 +1,7 @@
+# Output products list for <peas_rom>
+peas_rom.mif
+peas_rom.ngc
+peas_rom.v
+peas_rom.veo
+peas_rom.xco
+peas_rom_flist.txt

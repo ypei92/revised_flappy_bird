@@ -1,0 +1,7 @@
+# Output products list for <cloud_rom>
+cloud_rom.mif
+cloud_rom.ngc
+cloud_rom.v
+cloud_rom.veo
+cloud_rom.xco
+cloud_rom_flist.txt

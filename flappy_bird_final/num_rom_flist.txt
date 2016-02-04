@@ -1,0 +1,7 @@
+# Output products list for <num_rom>
+num_rom.mif
+num_rom.ngc
+num_rom.v
+num_rom.veo
+num_rom.xco
+num_rom_flist.txt

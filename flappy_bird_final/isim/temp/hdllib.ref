@@ -1,0 +1,10 @@
+MO VGA NULL C:\Xilinx\8.2i\project\flappy_bird/VGA.v vlg0A/_v_g_a.bin 1404270273
+MO ps2_kbd_driver NULL C:\Xilinx\8.2i\project\flappy_bird/ps2_kbd_driver.v vlg24/ps2__kbd__driver.bin 1404270273
+MO testbench NULL C:\Xilinx\8.2i\project\flappy_bird/testbench.v vlg6C/testbench.bin 1404270273
+MO top NULL C:\Xilinx\8.2i\project\flappy_bird/top.v vlg6F/top.bin 1404270273
+MO pipe NULL C:\Xilinx\8.2i\project\flappy_bird/pipe.v vlg06/pipe.bin 1404270273
+MO control NULL C:\Xilinx\8.2i\project\flappy_bird/control.v vlg61/control.bin 1404270273
+MO ps2_ctlr NULL C:\Xilinx\8.2i\project\flappy_bird/ps2_ctlr.v vlg3D/ps2__ctlr.bin 1404270273
+MO glbl NULL C:/Xilinx/8.2i/verilog/src/glbl.v vlg2D/glbl.bin 1404270273
+MO clk_div NULL C:\Xilinx\8.2i\project\flappy_bird/clk_div.v vlg3C/clk__div.bin 1404270273
+MO vga_show NULL C:\Xilinx\8.2i\project\flappy_bird/vga_show.v vlg52/vga__show.bin 1404270273

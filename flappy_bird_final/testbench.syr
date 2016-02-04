@@ -1,0 +1,134 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.13 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.13 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: testbench.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "testbench.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "testbench"
+Output Format                      : NGC
+Target Device                      : xc2vp30-6-ff896
+
+---- Source Options
+Top Module Name                    : testbench
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : testbench.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+tristate2logic                     : Yes
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ps2_kbd_driver.v" in library work
+Compiling verilog file "pipe.v" in library work
+Module <ps2_kbd_driver> compiled
+Compiling verilog file "VGA.v" in library work
+Module <pipe> compiled
+Compiling verilog file "vga_show.v" in library work
+Module <VGA> compiled
+Compiling verilog file "ps2_ctlr.v" in library work
+Module <vga_show> compiled
+Compiling verilog file "control.v" in library work
+Module <ps2_ctlr> compiled
+Compiling verilog file "clk_div.v" in library work
+Module <control> compiled
+Compiling verilog file "top.v" in library work
+Module <clk_div> compiled
+Compiling verilog file "testbench.v" in library work
+Module <top> compiled
+Module <testbench> compiled
+No errors in compilation
+Analysis of file <"testbench.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+ERROR:Xst - "testbench.v" line 21: Module <testbench> has no port.
+ERROR:Xst - Error found while building hierarchy.
+--> 
+
+Total memory usage is 93188 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

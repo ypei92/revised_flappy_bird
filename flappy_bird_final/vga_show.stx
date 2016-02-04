@@ -1,0 +1,42 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.09 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "num_rom.v" in library work
+Compiling verilog file "bgd.v" in library work
+Module <num_rom> compiled
+Compiling verilog file "pipe.v" in library work
+Module <bgd> compiled
+Compiling verilog file "number.v" in library work
+Module <pipe> compiled
+Compiling verilog file "back.v" in library work
+Module <number> compiled
+Compiling verilog file "Wing_show.v" in library work
+Module <back> compiled
+Compiling verilog file "VGA.v" in library work
+Module <Wing_show> compiled
+Compiling verilog file "Peashooter_show.v" in library work
+Module <VGA> compiled
+Compiling verilog file "Bird_show.v" in library work
+Module <Peashooter_show> compiled
+Compiling verilog file "vga_show.v" in library work
+Module <Bird_show> compiled
+Module <vga_show> compiled
+No errors in compilation
+Analysis of file <"vga_show.prj"> succeeded.
+ 
+CPU : 0.06 / 0.16 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 
+
+Total memory usage is 92012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

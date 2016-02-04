@@ -1,0 +1,7 @@
+# Output products list for <lfie_rom>
+lfie_rom.mif
+lfie_rom.ngc
+lfie_rom.v
+lfie_rom.veo
+lfie_rom.xco
+lfie_rom_flist.txt
